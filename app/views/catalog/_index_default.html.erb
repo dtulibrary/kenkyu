@@ -5,7 +5,14 @@
     <% if should_render_index_field? document, field %>
 	    <dt class="blacklight-<%= solr_fname.parameterize %>"><%= render_index_field_label document, :field => solr_fname %></dt>
 	    <dd class="blacklight-<%= solr_fname.parameterize %>"><%= render_index_field_value document, :field => solr_fname %></dd>
-    <% end -%>
-  <% end -%>
 
+    <% end -%>
+
+  <% end -%>
+     <dt>Availability</dt>
+     <dd><a class="btn-link" id="availaility_btn_link" style="color: #FF0000;">GET IT</a>
+    </dd>
 </dl>
+
+
+

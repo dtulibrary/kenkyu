@@ -1,3 +1,8 @@
 en:
   blacklight:
     application_name: 'Blacklight'
+    welcome: Welcome to Kenkyu !
+
+    search:
+      facets:
+        title: 'Limit your search:' 

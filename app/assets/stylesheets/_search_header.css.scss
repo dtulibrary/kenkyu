@@ -1,0 +1,78 @@
+ @import 'kenkyu_defaults';
+  
+  /* Search-area*/
+
+
+   #search-navbar {
+
+     navbar.navbar-default.navbar-static-top {
+
+     background-color: $lightgrey;
+
+     
+   } 
+
+
+   .container {
+
+      background-color: $lightgrey;
+      margin-left: 0px;
+      
+      .navbar-right {
+      margin-right: 300px;
+
+    }
+
+   }
+
+   .search-btn {
+
+    background-color: $kenkyu-blue;
+    width: 150px;
+    margin-left: 5px;
+    font-size: $medium-fontsize;
+    
+    }
+
+    .navbar-header {
+     
+     width: 1440px;
+     background-color: $lightgrey;
+     margin-left: 0px;
+
+    }
+
+    #user-util-collapse {
+    
+      .collapse.navbar-collapse {
+     
+      }
+    }
+    
+
+    .input-group {
+      margin-left: 430px;
+       .q.form-control {
+     
+       width: 250px;
+       font-size: $medium-fontsize;
+
+      }
+
+    }
+     
+
+    .input-group-addon {
+
+       width: 100px;
+  
+    }
+
+    .sr-only {
+
+       width: 600px;
+    }
+
+ }
+    
+
