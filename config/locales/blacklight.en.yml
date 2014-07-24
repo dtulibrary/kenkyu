@@ -1,8 +1,9 @@
 en:
   blacklight:
-    application_name: 'Blacklight'
-    welcome: Welcome to Kenkyu !
+    application_name: 'Den Dankse Forskningsdatabase-Danish National Research Database'
+    welcome: Welcome to the Danish National Research Database !
 
     search:
       facets:
         title: 'Limit your search:' 
+    

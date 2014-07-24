@@ -3,25 +3,10 @@
   /* Search-area*/
 
 
-   #search-navbar {
-
-     navbar.navbar-default.navbar-static-top {
-
-     background-color: $lightgrey;
-
-     
-   } 
-
-
    .container {
 
-      background-color: $lightgrey;
-      margin-left: 0px;
       
-      .navbar-right {
-      margin-right: 300px;
-
-    }
+      margin-left: 0px;
 
    }
 
@@ -31,48 +16,66 @@
     width: 150px;
     margin-left: 5px;
     font-size: $medium-fontsize;
+   
     
     }
 
     .navbar-header {
      
      width: 1440px;
-     background-color: $lightgrey;
+     background-color: $kenkyu-steelblue;
      margin-left: 0px;
 
     }
 
-    #user-util-collapse {
-    
-      .collapse.navbar-collapse {
-     
-      }
-    }
-    
 
     .input-group {
-      margin-left: 430px;
+      margin-left: 100px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      width: 200px; 
+     
        .q.form-control {
-     
-       width: 250px;
+    
+       width: 400px;
        font-size: $medium-fontsize;
-
+ 
       }
-
     }
-     
+
+    
+
 
     .input-group-addon {
-
-       width: 100px;
-  
+       margin-left: 100px; 
+       width: 500px;
+       border: none;
+       background-color: $kenkyu-steelblue;
+       
     }
 
     .sr-only {
-
-       width: 600px;
+       
+       width: 400px;
+       border: none;
+       background-color: $kenkyu-steelblue;
+       
     }
 
- }
+
+    .search_field {
+     
+      width:350px;
+      background-color: $kenkyu-steelblue;
+      color: $white;
+      font-size: $big-fontsize;
+      font-weight: bold;
+      border: none;
+
+  
+    
+  }
+
+ 
     
 

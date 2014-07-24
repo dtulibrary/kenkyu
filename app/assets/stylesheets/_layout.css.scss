@@ -12,49 +12,26 @@
 */
 
 #header-navbar {
-
+   display:none;
   .navbar-right {
-
+       display:none;
        margin-right: 200px;
        font-size: $medium-fontsize;
   }
 
-  .navbar-brand {  /* The main logo image for the Blacklight instance */
-  	
-   background-image: image_url('blacklight/jap_my2.png');
-   width: 300px;
-   background-color: $kenkyu-red;
-   margin-left: 130px;
-
-   background-repeat: no-repeat;
-
-   background-position:top left;
-   .navbar.navbar.navbar-inverse.navbar-static-top {
-
-   background-color: $kenkyu-red;
-   
-    }
-	  
-  }
+  
 
    .navbar-collapse {
-
-     background-color: $kenkyu-red;
+     display:none;
+     background-color: $kenkyu-steelblue;
 
   }
 
   .container {
-
-    background-color: $kenkyu-red;
-    width: 1440px;
   
-  }
-
-
-  .navbar.navbar-inverse {
-     
-    background-color: $kenkyu-red;
-
+    width: 1440px;
+    
+  
     }
     
   }
