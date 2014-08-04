@@ -4,6 +4,6 @@ en:
     welcome: Welcome to the Danish National Research Database !
 
     search:
-      facets:
-        title: 'Limit your search:' 
+      form:
+        logo_label: 'Danish National Research Database'
     
