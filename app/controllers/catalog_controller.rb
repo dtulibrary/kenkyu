@@ -23,18 +23,18 @@ class CatalogController < ApplicationController
     ## Default parameters to send on single-document requests to Solr. These settings are the Blackligt defaults (see SolrHelper#solr_doc_params) or 
     ## parameters included in the Blacklight-jetty document requestHandler.
     #
-    #config.default_document_solr_params = {
-    #  :qt => 'document',
-    #  ## These are hard-coded in the blacklight 'document' requestHandler
-    #  # :fl => '*',
-    #  # :rows => 1
-    #  # :q => '{!raw f=id v=$id}' 
-    #}
+    config.default_document_solr_params = {
+     :qt => '/ddf_publ_document',
+      ## These are hard-coded in the blacklight 'document' requestHandler
+      # :fl => '*',
+      # :rows => 1
+      # :q => '{!raw f=id v=$id}' 
+    }
 
     # solr field configuration for search results/index views
    
-    config.index.title_field = :title_ts
-    config.index.display_type_field = :format
+    config.index.title_field = 'title_ts'
+    config.index.display_type_field = 'format'
 
     # solr field configuration for document/show views
     config.show.title_field = 'title_ts'
@@ -59,9 +59,9 @@ class CatalogController < ApplicationController
     #
     # :show may be set to false if you don't want the facet to be drawn in the 
     # facet bar
-    config.add_facet_field 'format', :label => 'Format', :single => true
-    config.add_facet_field 'subformat_s', :label => 'Subformat', :single => true
-    config.add_facet_field 'journal_title_facet', :single => true
+    config.add_facet_field 'author_facet', :label => 'Author', :single => true
+    config.add_facet_field 'keywords_facet', :label => 'Keyword', :single => true
+    config.add_facet_field 'journal_title_facet', :label => 'Journal title', :single => true
   
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
@@ -71,13 +71,15 @@ class CatalogController < ApplicationController
     # solr fields to be displayed in the index (search results) view
     #   The ordering of the field names is the order of the display 
     config.add_index_field 'title_ts', :label => 'Title'
-    config.add_index_field 'author_ts', :label => 'Authors'
     config.add_index_field 'journal_title_ts', :label => 'Journal Title'
+    config.add_index_field 'author_ts', :label => 'Authors'
+   
 
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display 
     config.add_show_field 'title_ts', :label => 'Title'
     config.add_show_field 'author_ts', :label => 'Authors'
+    config.add_show_field 'abstract_ts', :label => 'Abstract'
 
     # "fielded" search configuration. Used by pulldown among other places.
     # For supported keys in hash, see rdoc for Blacklight::SearchFields

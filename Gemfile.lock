@@ -175,6 +175,7 @@ DEPENDENCIES
   capistrano (~> 2.0)
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
+  jettywrapper
   jquery-rails
   metastore-test_data!
   pg
