@@ -9,12 +9,11 @@ gem 'jquery-rails'
 gem 'pg'
 gem 'jbuilder', '~> 2.0'
 gem 'capistrano', '~> 2.0'
-gem "jettywrapper", "~> 1.7"
-gem "devise"
-gem "devise-guests", "~> 0.3"
+gem 'cancancan'
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'metastore-test_data', :path => '../metastore-test_data'
 end
 
 group :assets do

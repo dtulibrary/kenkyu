@@ -43,5 +43,3 @@ public/assets
 
 # Ignore Aptana/Eclipse project files
 .project
-
-/jetty
