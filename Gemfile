@@ -13,7 +13,7 @@ gem 'cancancan'
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'metastore-test_data', :path => '../metastore-test_data'
+  gem 'metastore-test_data', :github => 'dtulibrary/metastore-test_data'
 end
 
 group :assets do

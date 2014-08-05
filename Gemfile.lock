@@ -1,5 +1,6 @@
-PATH
-  remote: ../metastore-test_data
+GIT
+  remote: git://github.com/dtulibrary/metastore-test_data.git
+  revision: bd5e5345b988c3061636a719a328e2cf489d1165
   specs:
     metastore-test_data (0.0.1)
       jettywrapper (~> 1.3.0)
