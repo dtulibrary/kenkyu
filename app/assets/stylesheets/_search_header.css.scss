@@ -4,79 +4,66 @@
    
 
    .container {
-   
-      margin-left: -10px;
+       margin-left: -10px;
    }
 
    #logo_label {
-      margin-left: 30px;
-      margin-top: 30px;
-      margin-bottom: 10px;
-      font-size: $big-fontsize;
-      font-weight: bold;
-      color: $white;
-      background-color: $kenkyu-steelblue;
-
-   }
+       margin-left: 30px;
+       margin-top: 30px;
+       margin-bottom: 10px;
+       font-size: $big-fontsize;
+       font-weight: bold;
+       color: $white;
+       background-color: $kenkyu-steelblue;
+ }
 
    .search-btn {
-
-    background-color: $kenkyu-blue;
-    width: 150px;
-    margin-left: 5px;
-    font-size: $medium-fontsize;
-   
-    
-    }
+       background-color: $kenkyu-blue;
+       width: 150px;
+       margin-left: 5px;
+       font-size: $medium-fontsize;
+  }
 
     .navbar-header {
-     
-     width: 1440px;
-     background-color: $kenkyu-steelblue;
-     margin-left: 0px;
-
-    }
+       width: 1440px;
+       background-color: $kenkyu-steelblue;
+       margin-left: 0px;
+  }
 
 
     .input-group {
-      margin-left: 400px;
-      margin-top: -50px;
-      margin-bottom: 10px;
-      width: 400px; 
+       margin-left: 400px;
+       margin-top: -50px;
+       margin-bottom: 10px;
+       width: 400px; 
      
-       .q.form-control {
-    
+      .q.form-control {
        width: 500px;
        font-size: $medium-fontsize;
- 
-      }
     }
+  }
 
     .input-group-addon {
        margin-left: 100px; 
        width: 600px;
        border: none;
        background-color: $kenkyu-steelblue;
-       
     }
 
     .sr-only {
        width: 400px;
        border: none;
        background-color: $kenkyu-steelblue;
-       
     }
 
 
     .search_field {
-     
       width: 350px;
       background-color: $kenkyu-steelblue;
       color: $white;
       font-size: $big-fontsize;
       font-weight: bold;
       border: none;
-  
     }
 
  
