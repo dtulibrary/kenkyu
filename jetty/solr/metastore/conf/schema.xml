@@ -35,7 +35,8 @@
         <field name="journal_page_start_tsort"  type="ondisk_docval_tint"   indexed="true" stored="false" multiValued="false" docValues="true" required="false" />
         <field name="title_sort"                type="ondisk_docval_string" indexed="true" stored="false" multiValued="false" docValues="true" required="false" />
         <field name="author_sort"               type="ondisk_docval_string" indexed="true" stored="false" multiValued="false" docValues="true" required="false" />
-
+        <field name="publisher_sort"            type="ondisk_docval_string" indexed="true" stored="false" multiValued="false" docValues="true" required="false" />
+        
         <!-- dynamic fields -->
         <dynamicField name="*_s"   type="string"  indexed="true" stored="true" />
         <dynamicField name="*_ss"  type="string"  indexed="true" stored="true" multiValued="true"/>
