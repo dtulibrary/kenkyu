@@ -64,11 +64,11 @@ class CatalogController < ApplicationController
     # facet bar
     config.add_facet_field 'format', :label => 'Type'
     config.add_facet_field 'pub_date_tsort', :label => 'Publication Year'
-    config.add_facet_field 'affiliation_ts', :label => 'Research Institution'
+    config.add_facet_field 'source_ss', :label => 'Research Institution'
     config.add_facet_field 'author_facet', :label => 'Author'
     config.add_facet_field 'keywords_facet', :label => 'Keyword'
     config.add_facet_field 'journal_title_facet', :label => 'Journal title'
-   
+	
    
   
     # Have BL send all facet field names to Solr, which has been the default
@@ -82,18 +82,20 @@ class CatalogController < ApplicationController
     config.add_index_field 'author_ts', :label => 'Authors'
     config.add_index_field 'format', :label => 'Type'
     config.add_index_field 'journal_title_ts', :label => 'Published in'
-    config.add_index_field 'journal_vol_tsort', :label => 'Vol.'
-    config.add_index_field 'journal_issue_tsort', :label => 'Issue'
-    config.add_index_field 'journal_page_start_tsort', :label => 'Pages'
+    config.add_index_field 'journal_vol_ssf', :label => 'Vol.'
+    config.add_index_field 'journal_issue_ssf', :label => 'Issue'
+    config.add_index_field 'journal_page_ssf', :label => 'Pages'
     config.add_index_field 'abstract_ts', :label => 'Abstract'
-   
+
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display 
 
     config.add_show_field 'author_ts', :label => 'Authors'
     config.add_show_field 'format', :label => 'Type'
-    config.add_show_field 'abstract_ts', :label => 'Abstract'
     config.add_show_field 'journal_title_ts', :label => 'Published in'
+    config.add_show_field 'abstract_ts', :label => 'Abstract'
+	config.add_show_field 'isolanguage_facet', :label => 'ISO'
+   
     
     # "fielded" search configuration. Used by pulldown among other places.
     # For supported keys in hash, see rdoc for Blacklight::SearchFields
