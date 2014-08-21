@@ -29,7 +29,7 @@
         <field name="spell" type="textSpell" indexed="true" stored="false" multiValued="true"/>
 
         <!-- specialized fields (mainly to configure docValues on selected fields) -->
-        <field name="pub_date_tsort"            type="ondisk_docval_tint"   indexed="true" stored="false" multiValued="false" docValues="true" required="false" />
+        <field name="pub_date_tsort"            type="ondisk_docval_tint"   indexed="true" stored="true" required="true" />
         <field name="journal_vol_tsort"         type="ondisk_docval_tint"   indexed="true" stored="false" multiValued="false" docValues="true" required="false" />
         <field name="journal_issue_tsort"       type="ondisk_docval_tint"   indexed="true" stored="false" multiValued="false" docValues="true" required="false" />
         <field name="journal_page_start_tsort"  type="ondisk_docval_tint"   indexed="true" stored="false" multiValued="false" docValues="true" required="false" />
