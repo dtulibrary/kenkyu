@@ -69,6 +69,15 @@ module Blacklight::CatalogHelperBehavior
     return snippet.size > 500 ? snippet.slice(0, 500) + '...' : snippet
   end
 
+  def snip_abstract args
+    render_abstract_snippet args[:document]
+  end
+
+  def render_abstract_snippet document
+    snippet = (document['abstract_ts'] || ['No abstract']).first
+    return snippet.size > 500 ? snippet.slice(0, 500) + '...' : snippet
+  end
+
   ##
   # Like #page_entries_info above, but for an individual
   # item show page. Displays "showing X of Y items" message.

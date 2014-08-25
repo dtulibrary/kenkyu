@@ -5,7 +5,14 @@
     <% if should_render_index_field? document, field %>
 	    <dt class="blacklight-<%= solr_fname.parameterize %>"><%= render_index_field_label document, :field => solr_fname %></dt> 
 		
+<<<<<<< HEAD
 	    <dd class="blacklight-<%= solr_fname.parameterize %>"><%= render_index_field_value document, :field => solr_fname  %></dd>
+=======
+	    <dd class="blacklight-<%= solr_fname.parameterize %>"><%= render_index_field_value document, :field => solr_fname   %></dd>
+ 
+
+    <% end -%>
+>>>>>>> 232e20d86344202f0daaa29532e9c15397d8386e
 
       <% end -%>
   <% end -%>

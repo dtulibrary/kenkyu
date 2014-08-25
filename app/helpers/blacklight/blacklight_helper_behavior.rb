@@ -29,9 +29,12 @@ module Blacklight::BlacklightHelperBehavior
   def render_page_title
     (content_for(:page_title) if content_for?(:page_title)) || @page_title || application_name
   end
+<<<<<<< HEAD
   
   
 	
+=======
+>>>>>>> 232e20d86344202f0daaa29532e9c15397d8386e
   ##
   # Create <link rel="alternate"> links from a documents dynamically
   # provided export formats. Currently not used by standard BL layouts,
