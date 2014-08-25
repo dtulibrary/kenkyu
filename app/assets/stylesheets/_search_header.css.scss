@@ -2,22 +2,18 @@
   
   /* Search-area*/
    
-
    .container {
        margin-left: -10px;
    }
    #logo_label {
        margin-left: 30px;
        margin-top: 30px;
-       font-weight: bold;
-       font-size: $big-fontsize;
-       color: $white;
        background-color: $kenkyu-steelblue;
   }
    #logo_btn-link {
        color: $white;
        font-weight: bold; 
-       font-size: 20px; 
+       font-size: $big-fontsize;
   }
    .search-btn {
        background-color: $kenkyu-blue;

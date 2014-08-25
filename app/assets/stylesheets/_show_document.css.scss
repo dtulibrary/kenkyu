@@ -1,4 +1,13 @@
+@import 'kenkyu_defaults';
 #document h1 {
-	
-  font-size: $medium-fontsize;
+    font-size: $medium-fontsize;
+}
+
+#sourcelink_in GetIt_box {
+      color: $kenkyu-blue;
+} 
+    
+
+#availability_btn_link {
+    color: $red;
 }
