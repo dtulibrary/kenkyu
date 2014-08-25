@@ -1,7 +1,6 @@
 # -*- encoding : utf-8 -*-
 #
 class CatalogController < ApplicationController  
- 
 
   include Blacklight::Catalog
 
@@ -13,13 +12,10 @@ class CatalogController < ApplicationController
       :qt => '/ddf_publ',
       :rows => 15 
     }
-    
     # solr path which will be added to solr base url before the other solr params.
     #config.solr_path = 'select' 
-    
     # items to show per page, each number in the array represent another option to choose from.
-    config.per_page = [5,10,20,50,100]
-
+    config.per_page = [10,20,50,100]
     ## Default parameters to send on single-document requests to Solr. These settings are the Blackligt defaults (see SolrHelper#solr_doc_params) or 
     ## parameters included in the Blacklight-jetty document requestHandler.
     #
@@ -30,19 +26,16 @@ class CatalogController < ApplicationController
       # :rows => 1
       # :q => '{!raw f=id v=$id}' 
     }
-
     # solr field configuration for search results/index views
-   
     config.index.title_field = 'title_ts'
     config.index.display_type_field = 'format'
-    config.index.source_id = 'source_id_ss'
+    config.index.source_id = 'source_ss'
     config.index.affiliation_field = 'affiliation_ts'
     # solr field configuration for document/show views
     config.show.title_field = 'title_ts'
     config.show.display_type_field = 'format'
     config.show.affiliation_field = 'affiliation_ts'
-    config.show.source_id = 'source_id_ss'
-
+    config.show.source_id = 'source_ss'
     # solr fields that will be treated as facets by the blacklight application
     #   The ordering of the field names is the order of the display
     #
@@ -64,39 +57,34 @@ class CatalogController < ApplicationController
     # facet bar
     config.add_facet_field 'format', :label => 'Type'
     config.add_facet_field 'pub_date_tsort', :label => 'Publication Year'
-    config.add_facet_field 'source_ss', :label => 'Research Institution'
+    config.add_facet_field 'source_ss', :label => 'Research Institution' 
     config.add_facet_field 'author_facet', :label => 'Author'
     config.add_facet_field 'keywords_facet', :label => 'Keyword'
     config.add_facet_field 'journal_title_facet', :label => 'Journal title'
-	
-   
-  
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
     # handler defaults, or have no facets.
     config.add_facet_fields_to_solr_request!
-
     # solr fields to be displayed in the index (search results) view
     #   The ordering of the field names is the order of the display 
-    
-    config.add_index_field 'author_ts', :label => 'Authors'
+    config.add_index_field 'author_ts', :label => 'Authors', :separator => '; '
     config.add_index_field 'format', :label => 'Type'
     config.add_index_field 'journal_title_ts', :label => 'Published in'
-    config.add_index_field 'journal_vol_ssf', :label => 'Vol.'
+    config.add_index_field 'pub_date_tis', :label => 'Publication year'
+    config.add_index_field 'journal_vol_ssf', :label => 'Volume'
     config.add_index_field 'journal_issue_ssf', :label => 'Issue'
     config.add_index_field 'journal_page_ssf', :label => 'Pages'
-    config.add_index_field 'abstract_ts', :label => 'Abstract'
-
+    config.add_index_field 'abstract_ts', :label => 'Abstract', :helper_method => :snip_abstract
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display 
-
     config.add_show_field 'author_ts', :label => 'Authors'
     config.add_show_field 'format', :label => 'Type'
     config.add_show_field 'journal_title_ts', :label => 'Published in'
+    config.add_show_field 'pub_date_tis', :label => 'Publication year'
+    config.add_show_field 'journal_vol_ssf', :label => 'Volume'
+    config.add_show_field 'journal_issue_ssf', :label => 'Issue'
+    config.add_show_field 'journal_page_ssf', :label => 'Pages'
     config.add_show_field 'abstract_ts', :label => 'Abstract'
-	config.add_show_field 'isolanguage_facet', :label => 'ISO'
-   
-    
     # "fielded" search configuration. Used by pulldown among other places.
     # For supported keys in hash, see rdoc for Blacklight::SearchFields
     #
@@ -110,22 +98,14 @@ class CatalogController < ApplicationController
     # as well as in URLs -- so changing it after deployment may break bookmarked
     # urls.  A display label will be automatically calculated from the :key,
     # or can be specified manually to be different. 
-
     # This one uses all the defaults set by the solr request handler. Which
     # solr request handler? The one set in config[:default_solr_parameters][:qt],
     # since we aren't specifying it otherwise. 
-    
     config.add_search_field 'all_fields', :label => 'Title'
-    
     # "sort results by" select (pulldown)
     # label in pulldown is followed by the name of the SOLR field to sort by and
     # whether the sort is ascending or descending (it must be asc or desc
     # except in the relevancy case).
-    config.add_sort_field  'score desc, id desc', :label => 'relevance'
-
-    # If there are more than this many search results, no spelling ("did you 
-    # mean") suggestion is offered.
-    #config.spell_max = 5
+    config.add_sort_field  'score desc, id desc', :label => 'relevance' 
   end
-
 end 

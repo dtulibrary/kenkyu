@@ -43,6 +43,7 @@ module Blacklight::CatalogHelperBehavior
     end
   end
 
+
   ##
   # Get the offset counter for a document
   #
@@ -52,6 +53,20 @@ module Blacklight::CatalogHelperBehavior
     unless render_grouped_response? 
       idx + 1 + @response.params[:start].to_i
     end
+  end
+   
+  def render_author_list authors
+    list = (document['author_ts']).first
+    return list.join(authors || content_tag(:span, '; ')).html_safe
+  end
+
+  def snip_abstract args
+    render_abstract_snippet args[:document]
+  end
+
+  def render_abstract_snippet document
+    snippet = (document['abstract_ts'] || ['No abstract']).first
+    return snippet.size > 500 ? snippet.slice(0, 500) + '...' : snippet
   end
 
   ##
@@ -112,7 +127,8 @@ module Blacklight::CatalogHelperBehavior
   def render_document_sidebar_partial(document = @document)
     render :partial => 'show_sidebar'
   end
-
+  
+ 
   ##
   # Should we display the sort and per page widget?
   # 
@@ -187,7 +203,11 @@ module Blacklight::CatalogHelperBehavior
   def add_group_facet_params_and_redirect group
     add_facet_params_and_redirect(group.field, group.key)
   end
+  
 
+  ##
+ 
+  #
   ##
   # Render the view type icon for the results view picker
   # 
