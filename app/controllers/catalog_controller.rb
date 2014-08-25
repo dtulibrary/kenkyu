@@ -16,10 +16,7 @@ class CatalogController < ApplicationController
     #config.solr_path = 'select' 
     # items to show per page, each number in the array represent another option to choose from.
     config.per_page = [10,20,50,100]
-<<<<<<< HEAD
-=======
 
->>>>>>> 232e20d86344202f0daaa29532e9c15397d8386e
     ## Default parameters to send on single-document requests to Solr. These settings are the Blackligt defaults (see SolrHelper#solr_doc_params) or 
     ## parameters included in the Blacklight-jetty document requestHandler.
     #
@@ -40,10 +37,6 @@ class CatalogController < ApplicationController
     config.show.display_type_field = 'format'
     config.show.affiliation_field = 'affiliation_ts'
     config.show.source_id = 'source_ss'
-<<<<<<< HEAD
-=======
-
->>>>>>> 232e20d86344202f0daaa29532e9c15397d8386e
     # solr fields that will be treated as facets by the blacklight application
     #   The ordering of the field names is the order of the display
     #
@@ -75,7 +68,6 @@ class CatalogController < ApplicationController
     config.add_facet_fields_to_solr_request!
     # solr fields to be displayed in the index (search results) view
     #   The ordering of the field names is the order of the display 
-<<<<<<< HEAD
     config.add_index_field 'author_ts', :label => 'Authors', :separator => '; '
     config.add_index_field 'format', :label => 'Type'
     config.add_index_field 'journal_title_ts', :label => 'Published in'
@@ -84,17 +76,6 @@ class CatalogController < ApplicationController
     config.add_index_field 'journal_issue_ssf', :label => 'Issue'
     config.add_index_field 'journal_page_ssf', :label => 'Pages'
     config.add_index_field 'abstract_ts', :label => 'Abstract', :helper_method => :snip_abstract
-=======
-    
-
-    config.add_index_field 'author_ts', :label => 'Authors'
-    config.add_index_field 'format', :label => 'Type'
-    config.add_index_field 'journal_title_ts', :label => 'Published in'
-    config.add_index_field 'journal_issue_ssf', :label => 'Issue'
-    config.add_index_field 'journal_page_ssf', :label => 'Pages'
-    config.add_index_field 'abstract_ts', :label => 'Abstract', :helper_method => :snip_abstract
-
->>>>>>> 232e20d86344202f0daaa29532e9c15397d8386e
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display 
     config.add_show_field 'author_ts', :label => 'Authors'
@@ -105,11 +86,6 @@ class CatalogController < ApplicationController
     config.add_show_field 'journal_issue_ssf', :label => 'Issue'
     config.add_show_field 'journal_page_ssf', :label => 'Pages'
     config.add_show_field 'abstract_ts', :label => 'Abstract'
-<<<<<<< HEAD
-=======
-	
-    
->>>>>>> 232e20d86344202f0daaa29532e9c15397d8386e
     # "fielded" search configuration. Used by pulldown among other places.
     # For supported keys in hash, see rdoc for Blacklight::SearchFields
     #
