@@ -32,6 +32,7 @@ class CatalogController < ApplicationController
     config.index.display_type_field = 'format'
     config.index.source_id = 'source_ss'
     config.index.affiliation_field = 'affiliation_ts'
+
     # solr field configuration for document/show views
     config.show.title_field = 'title_ts'
     config.show.display_type_field = 'format'
@@ -56,12 +57,13 @@ class CatalogController < ApplicationController
     #
     # :show may be set to false if you don't want the facet to be drawn in the 
     # facet bar
-    config.add_facet_field 'format', :label => 'Type'
+    config.add_facet_field 'format', :label => 'Type', :helper_method => :render_format_field_facet
     config.add_facet_field 'pub_date_tsort', :label => 'Publication Year', :limit => 10
-    config.add_facet_field 'source_ss', :label => 'Research Institution', :limit => 10
+    config.add_facet_field 'source_ss', :label => 'Research Institution', :helper_method => :render_source_field_facet, :limit => 10
     config.add_facet_field 'author_facet', :label => 'Author', :limit => 10
     config.add_facet_field 'keywords_facet', :label => 'Keyword', :limit => 10
     config.add_facet_field 'journal_title_facet', :label => 'Journal title', :limit => 10
+
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
     # handler defaults, or have no facets.

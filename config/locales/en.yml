@@ -20,5 +20,41 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
-  
+  mxd_type_labels:
+    dja: Journal article
+    djl: Letter to the editor
+    djc: Journal comment
+    djr: Journal review article
+    djb: Journal book review
+    dna: Newspaper article
+    db:  Book
+    dba: Book chapter
+    dbp: Book preface, encycl. entry
+    dr:  Report
+    dra: Report chapter
+    dcp: Conference paper
+    dca: Conference abstract
+    dco: Conference poster
+    dct: Conference talk
+    dw:  Working paper, (pr)eprint
+    dln: Lecture notes
+    dl:  Lecture
+    dp:  Patent
+    dtd: Thesis Doctoral
+    dtp: Thesis PhD
+    dtm: Thesis Master
+    dts: Student report
+    dso: Software
+    dd:  Data set
+    drt: Radio/TV broadcast
+    dx:  Exhibition catalogue
+    do:  Other
+  source_labels:
+    orbit: Technical University of Denmark
+    rdb_ku: University of Copenhagen
+    rdb_itu: IT University of Copenhagen
+    rdb_au: Aarhus University
+    rdb_cbs: Copenhagen Business School
+    rdb_ruc: Roskilde University
+    rdb_sdu: University of Southern Denmark
+    rdb_vbn: Aalborg University
