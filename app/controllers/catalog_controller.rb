@@ -71,22 +71,14 @@ class CatalogController < ApplicationController
     # solr fields to be displayed in the index (search results) view
     #   The ordering of the field names is the order of the display 
     config.add_index_field 'author_ts', :label => 'Authors', :separator => '; '
-    config.add_index_field 'format', :label => 'Type'
-    config.add_index_field 'journal_title_ts', :label => 'Published in'
-    config.add_index_field 'pub_date_tis', :label => 'Publication year'
-    config.add_index_field 'journal_vol_ssf', :label => 'Volume'
-    config.add_index_field 'journal_issue_ssf', :label => 'Issue'
-    config.add_index_field 'journal_page_ssf', :label => 'Pages'
+    config.add_index_field 'format', :label => 'Type', :helper_method => :render_format_field_index
+    config.add_index_field 'journal_title_ts', :label => 'Published in', :helper_method => :render_journal_info
     config.add_index_field 'abstract_ts', :label => 'Abstract', :helper_method => :snip_abstract
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display 
     config.add_show_field 'author_ts', :label => 'Authors', :separator => '; '
-    config.add_show_field 'format', :label => 'Type'
-    config.add_show_field 'journal_title_ts', :label => 'Published in'
-    config.add_show_field 'pub_date_tis', :label => 'Publication year'
-    config.add_show_field 'journal_vol_ssf', :label => 'Volume'
-    config.add_show_field 'journal_issue_ssf', :label => 'Issue'
-    config.add_show_field 'journal_page_ssf', :label => 'Pages'
+    config.add_show_field 'format', :label => 'Type', :helper_method => :render_format_field_index
+    config.add_show_field 'journal_title_ts', :label => 'Published in', :helper_method => :render_journal_info
     config.add_show_field 'abstract_ts', :label => 'Abstract'
     # "fielded" search configuration. Used by pulldown among other places.
     # For supported keys in hash, see rdoc for Blacklight::SearchFields

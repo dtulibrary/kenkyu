@@ -58,3 +58,7 @@ en:
     rdb_ruc: Roskilde University
     rdb_sdu: University of Southern Denmark
     rdb_vbn: Aalborg University
+  new_subtypes:
+    article: Journal Article
+    book: Book
+    

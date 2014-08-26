@@ -213,9 +213,45 @@ module Blacklight::CatalogHelperBehavior
     add_facet_params_and_redirect(group.field, group.key)
   end
   
-
-  ##
+  def render_journal_info args, format = :index
+   document = args[:document]
+   field = args[:field]
+   (render_journal_title_info(document, format) + render_journal_pub_date_info(document, format) + render_journal_vol_info(document, format) + render_journal_page_info(document, format)).html_safe
+  end
  
+  
+  def render_journal_page_info document, format
+    if document['journal_page_ssf']
+      ", p. #{document['journal_page_ssf'].first}"
+    else
+      ''
+    end
+  end
+
+  def render_journal_vol_info document, format
+    if document['journal_vol_ssf']
+      ", Vol #{document['journal_vol_ssf'].first}"
+    else
+      ''
+    end
+  end
+
+  def render_journal_title_info document, format
+    if document['journal_title_ts']
+      "#{document['journal_title_ts'].first}"
+    else
+      ''
+    end
+  end
+
+  def render_journal_pub_date_info document, format 
+    if document['pub_date_tis']
+      ", #{document['pub_date_tis'].first}"
+    else
+      ''
+    end
+  end
+
   #
   ##
   # Render the view type icon for the results view picker
