@@ -9,17 +9,12 @@
 -%>
 <div class="panel panel-default show-tools">
   <div class="panel-heading">
-    <label><h4>Get It</h4></label>
+    <div class="panel-title">Get It</div>
   </div>
   <div class="panel-body">
-  <ul class="nav">
-      <li>
-      <h>Institutional Repositories:</h>
-      </li>
-      <li >
-       <a class="btn-link" id="sourcelink_in GetIt_box" style="color: #3366CC;">orbit.dtu.dk</a>
-       <a class="btn-link" id="sourcelink_in GetIt_box" style="color: #3366CC;">vbn.aau.dk</a>
-      </li>
-  </ul>
+    <h5>Institutional Repositories</h5>
+    <% (@document['backlink_ss'] || []).each do |link| %>
+      <%= link_to t("source_labels.#{get_backlink_origin link}"), link, :target => '_blank' %>
+    <% end %>
   </div>
 </div>
