@@ -28,17 +28,19 @@
     background-color: $kenkyu-steelblue;
   }
 }
-#footer-navbar {
-
-  #footer-label {
+ .nav-bar{
+    #footer-navbar {
+      width:1800px;
+      #footer-label {
     
-    .h4 {
+        .h4 {
     
-    font-size: 10px;
-    color: $grey;
-    background-color: $lightgrey;
-     }
-   } 
-}
+        font-size: 10px;
+        color: $grey;
+        background-color: $lightgrey;
+         }
+      } 
+    }
+  }
   
 

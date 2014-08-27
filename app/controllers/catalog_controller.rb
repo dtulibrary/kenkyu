@@ -70,16 +70,16 @@ class CatalogController < ApplicationController
     config.add_facet_fields_to_solr_request!
     # solr fields to be displayed in the index (search results) view
     #   The ordering of the field names is the order of the display 
-    config.add_index_field 'author_ts', :label => 'Authors', :separator => '; '
+    config.add_index_field 'author_ts', :label => 'Authors', :separator => ' ; '
     config.add_index_field 'format', :label => 'Type', :helper_method => :render_format_field_index
     config.add_index_field 'journal_title_ts', :label => 'Published in', :helper_method => :render_journal_info
     config.add_index_field 'abstract_ts', :label => 'Abstract', :helper_method => :snip_abstract
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display 
-    config.add_show_field 'author_ts', :label => 'Authors', :separator => '; '
+    config.add_show_field 'author_ts', :label => 'Authors', :separator => ' ; '
     config.add_show_field 'format', :label => 'Type', :helper_method => :render_format_field_index
     config.add_show_field 'journal_title_ts', :label => 'Published in', :helper_method => :render_journal_info
-    config.add_show_field 'abstract_ts', :label => 'Abstract'
+    config.add_show_field 'abstract_ts', :label => 'Abstract', :helper_method => :snip_abstract
     # "fielded" search configuration. Used by pulldown among other places.
     # For supported keys in hash, see rdoc for Blacklight::SearchFields
     #
