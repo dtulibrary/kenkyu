@@ -58,7 +58,10 @@ class CatalogController < ApplicationController
     # :show may be set to false if you don't want the facet to be drawn in the 
     # facet bar
     config.add_facet_field 'format', :label => 'Type', :helper_method => :render_format_field_facet
-    config.add_facet_field 'pub_date_tsort', :label => 'Publication Year', :range => true
+    config.add_facet_field 'pub_date_tsort', :label => 'Publication Year', :range => {
+      :num_segments => 3,
+      :assumed_boundaries => [1900, Time.now.year + 2],
+    }
     config.add_facet_field 'source_ss', :label => 'Research Institution', :helper_method => :render_source_field_facet, :limit => 10
     config.add_facet_field 'author_facet', :label => 'Author', :limit => 10
     config.add_facet_field 'keywords_facet', :label => 'Research Area', :limit => 10
