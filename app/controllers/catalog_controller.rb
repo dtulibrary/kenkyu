@@ -77,12 +77,15 @@ class CatalogController < ApplicationController
     config.add_index_field 'format', :label => 'Type', :helper_method => :render_format_field_index
     config.add_index_field 'journal_title_ts', :label => 'Published in', :helper_method => :render_journal_info
     config.add_index_field 'abstract_ts', :label => 'Abstract', :helper_method => :snip_abstract
+    config.add_index_field 'source_ss', :label => 'Research Institution', :helper_method => :render_source_field 
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display 
     config.add_show_field 'author_ts', :label => 'Authors', :separator => ' ; '
     config.add_show_field 'format', :label => 'Type', :helper_method => :render_format_field_index
     config.add_show_field 'journal_title_ts', :label => 'Published in', :helper_method => :render_journal_info
     config.add_show_field 'abstract_ts', :label => 'Abstract', :helper_method => :snip_abstract
+    config.add_show_field 'source_ss', :label => 'Research Institution', :helper_method => :render_source_field 
+    
     # "fielded" search configuration. Used by pulldown among other places.
     # For supported keys in hash, see rdoc for Blacklight::SearchFields
     #
