@@ -58,9 +58,6 @@ en:
     rdb_ruc: Roskilde University
     rdb_sdu: University of Southern Denmark
     rdb_vbn: Aalborg University
-  source_content:
-    orbit: Technical University of Denmark
-    rdb_ku: University of Copenhagen
   new_subtypes:
     article: Journal article
     book: Book
