@@ -14,7 +14,7 @@ module CatalogHelper
     when /["Orbit"]/
       'Technical University of Denmark'
     when /["Rdb Ku"]/
-       'Copenhagen University'
+       'University of Copenhagen'
     when /["Rdb Itu"]/
        'IT University of Copenhagen'
     when /["Rdb Au"]/
