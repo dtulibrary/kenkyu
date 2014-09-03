@@ -40,7 +40,7 @@
 }
  .col-md-9 {
     width: 950px;
-    margin-left: 0px;
+    margin-left: -40px;
 }
  .col-md-3 {
      margin-left: 20px;
@@ -48,11 +48,11 @@
 
 #main-container {
     width: 1300px;
-    margin-left: 20px; 
+    margin-left: 50px; 
 }
 
 #facet-panel-collapse {
-    width: 290px;
+    width: 250px;
     font-size: $small-fontsize;
 }
  .nav-bar {
