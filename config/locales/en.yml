@@ -51,16 +51,13 @@ en:
     do:  Other
   source_labels:
     orbit: Technical University of Denmark
-    rdb_ku: University of Copenhagen
+    rdb_ku: Copenhagen University
     rdb_itu: IT University of Copenhagen
     rdb_au: Aarhus University
     rdb_cbs: Copenhagen Business School
     rdb_ruc: Roskilde University
     rdb_sdu: University of Southern Denmark
     rdb_vbn: Aalborg University
-  source_content:
-    orbit: Technical University of Denmark
-    rdb_ku: University of Copenhagen
   new_subtypes:
     article: Journal article
     book: Book
