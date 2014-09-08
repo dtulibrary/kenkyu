@@ -4,6 +4,8 @@ en:
     search:
       form:
         logo_label: 'Danish National Research Database'
+      facets:
+         more: 'more»'
     footer:
         h1: '(C)1998-2014 Denmark´s Electronic Research Library - Danish Agency for Libraries And Media' 
         h2: 'in cooperation with the Ministry of Culture, Ministry of Science, Technology and Innovation and Ministry of Education'

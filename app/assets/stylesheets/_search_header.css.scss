@@ -1,12 +1,17 @@
  @import 'kenkyu_defaults';
   
   /* Search-area*/
-   
-   .container {
-       margin-left: -15px;
+
+   #search-navbar {
+    background-color: $kenkyu-steelblue;
    }
-   #logo_label {
-       margin-left: 90px;
+  .navbar-header {
+       background-color: $kenkyu-steelblue;
+       margin-left: -10px;
+   }
+  .container {
+
+  #logo_label {
        margin-top: 30px;
        background-color: $kenkyu-steelblue;
   }
@@ -15,19 +20,15 @@
        font-weight: bold; 
        font-size: $big-fontsize;
   }
-   .search-btn {
+  .search-btn {
        background-color: $kenkyu-blue;
        width: 150px;
        margin-left: 5px;
        font-size: $medium-fontsize;
   }
-  .navbar-header {
-       width: 1800px;
-       background-color: $kenkyu-steelblue;
-       margin-left: -10px;
-  }
+
   .input-group {
-       margin-left: 470px;
+       margin-left: 400px;
        margin-top: -40px;
        width: 400px; 
      
@@ -42,12 +43,12 @@
        border: none;
        background-color: $kenkyu-steelblue;
     }
-   .sr-only {
+  .sr-only {
        width: 400px;
        border: none;
        background-color: $kenkyu-steelblue;
     }
-   .search_field {
+  .search_field {
       width: 350px;
       background-color: $kenkyu-steelblue;
       color: $white;
@@ -55,7 +56,7 @@
       font-weight: bold;
       border: none;
     }
-
+  }
  
     
 

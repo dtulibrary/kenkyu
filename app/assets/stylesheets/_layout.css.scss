@@ -10,7 +10,7 @@
   Header bar at top (Bootstrap nav-bar)
 */
 
-#header-navbar {
+ #header-navbar {
    display:none;
   .navbar-right {
        display:none;
@@ -19,54 +19,43 @@
   .navbar-collapse {
      display:none;
      background-color: $kenkyu-steelblue;
-
-  }
-
-  .container {
-    width: auto;
-    background-color: $kenkyu-steelblue;
   }
 }
 
-#home_text_area {
-    width: 950px;
-    height: 600px;
-    margin-top: 30px;
-    font-size: 16px;
+ .container {
+  .col-md-3{
+    .top-panel-heading{
+    display:none;
+  }  
+}
+  .more_facets_link {
+    margin-left: 160px;
+    margin-right: 0px;
+    width: 70px;
+    font-size: 14px;
+    text-align: right;
+    height: 30px;
 }
 
- .col-md-12 {
-    width: 1200px;
-}
- .col-md-9 {
-    width: 950px;
-    margin-left: -10px;
-}
- .col-md-3 {
-     margin-left: 20px;
- }
+ .facet-count {
+   margin-left: 140px; 
+   margin-right: 15px;
+   width: 80px;
+   height: 20px;
+ } 
 
-#main-container {
-    width: 1300px;
-    margin-left: 50px; 
-}
 
-#facet-panel-collapse {
-    width: 250px;
-    font-size: $small-fontsize;
+  #content{
+    font-size: $medium-fontsize;
+  }  
 }
- .nav-bar {
-     #footer-navbar {
-      width: 1800px;
-      #footer-label {
-        .h4 {
-        
-      font-size: 10px;
-      color: $grey;
-      background-color: $lightgrey;
-      }
-    } 
-  }
-}
-  
+   
+    
+     
+    
+    
+
+
+ 
+ 
 
