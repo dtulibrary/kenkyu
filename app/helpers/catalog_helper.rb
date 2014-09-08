@@ -10,28 +10,11 @@ module CatalogHelper
   end
 
   def render_source_field args
-    case t "source_labels.#{args[:document]['source_ss']}"
-   when /["Orbit"]/
-    'Technical University of Denmark'
-   when /["Rdb Ku"]/
-    'University of Copenhagen'
-   when /["Rdb Itu"]/
-    'IT University of Copenhagen'
-   when /["Rdb Au"]/
-    'Aarhus University'
-   when /["Rdb Cbs"]/
-    'Copenhagen Business School'
-   when /["Rdb Ruc"]/
-    'Roskilde University'
-   when /["Rdb Sdu"]/
-    'University of Southern Denmark'
-   when /["Rdb Vbn"]/
-    'Aalborg University'
-   end
+    args[:document]['source_ss'].collect {|s| t "source_labels.#{s}"}.join ' ; '
   end
 
   def render_format_field_index args
-   t "new_subtypes.#{args[:document]['format']}"
+    t "mxd_type_labels.#{args[:document]['format_orig_s']}"
   end
 
   def get_backlink_origin link
@@ -40,7 +23,7 @@ module CatalogHelper
       'orbit'
     when /^https?:\/\/pure.au.dk/
       'rdb_au'
-    when /^https?:\/\/curis.ku.dk/
+    when /^https?:\/\/forskning.ku.dk/
       'rdb_ku'
     when /^https?:\/\/pure.itu.dk/
       'rdb_itu'

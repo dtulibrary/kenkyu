@@ -1,11 +1,13 @@
 GIT
   remote: git://github.com/dtulibrary/metastore-test_data.git
-  revision: bd5e5345b988c3061636a719a328e2cf489d1165
+  revision: 33d544c016563f64de192e9e99c872fdfa91d34c
+  ref: 33d544c
   specs:
     metastore-test_data (0.0.1)
-      jettywrapper (~> 1.3.0)
+      jettywrapper
+      nokogiri
       rails
-      rsolr (~> 1.0.8)
+      rsolr
 
 GEM
   remote: https://rubygems.org/
