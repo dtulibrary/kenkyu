@@ -1,4 +1,4 @@
-function ($) {
+(function ($) {
 
   $("#overlay").click(function () {
     // Add modal background
