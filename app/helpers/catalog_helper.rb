@@ -17,6 +17,10 @@ module CatalogHelper
     t "mxd_type_labels.#{args[:document]['format_orig_s']}"
   end
 
+  def render_research_area_field args
+    args[:document]['research_area_ss'].collect {|s| t "research_area_labels.#{s}"}.join ' ; '
+  end
+
   def get_backlink_origin link
     case link
     when /^https?:\/\/orbit.dtu.dk/

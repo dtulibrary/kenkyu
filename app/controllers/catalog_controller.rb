@@ -64,26 +64,34 @@ class CatalogController < ApplicationController
     }
     config.add_facet_field 'source_ss', :label => 'Research Institution', :helper_method => :render_source_field_facet, :limit => 10
     config.add_facet_field 'author_facet', :label => 'Author', :limit => 10
-    config.add_facet_field 'keywords_facet', :label => 'Research Area', :limit => 10
+    config.add_facet_field 'research_area_ss', :label => 'Research Area'
     config.add_facet_field 'journal_title_facet', :label => 'Journal Title', :limit => 10
 
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
     # handler defaults, or have no facets.
     config.add_facet_fields_to_solr_request!
+
     # solr fields to be displayed in the index (search results) view
     #   The ordering of the field names is the order of the display 
     config.add_index_field 'author_ts', :label => 'Authors', :separator => ' ; '
     config.add_index_field 'format', :label => 'Type', :helper_method => :render_format_field_index
     config.add_index_field 'journal_title_ts', :label => 'Published in', :helper_method => :render_journal_info
     config.add_index_field 'abstract_ts', :label => 'Abstract', :helper_method => :snip_abstract
+    # TODO: Enable this when research area codes are available
+    #config.add_index_field 'research_area_ss', :label => 'Research Area', :helper_method => :render_research_area_field 
+    config.add_index_field 'research_area_ss', :label => 'Research Area'
     config.add_index_field 'source_ss', :label => 'Research Institution', :helper_method => :render_source_field 
+
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display 
     config.add_show_field 'author_ts', :label => 'Authors', :separator => ' ; '
     config.add_show_field 'format', :label => 'Type', :helper_method => :render_format_field_index
     config.add_show_field 'journal_title_ts', :label => 'Published in', :helper_method => :render_journal_info
     config.add_show_field 'abstract_ts', :label => 'Abstract', :helper_method => :snip_abstract
+    # TODO: Enable this when research area codes are available
+    #config.add_show_field 'research_area_ss', :label => 'Research Area', :helper_method => :render_research_area_field 
+    config.add_show_field 'research_area_ss', :label => 'Research Area'
     config.add_show_field 'source_ss', :label => 'Research Institution', :helper_method => :render_source_field 
     
     # "fielded" search configuration. Used by pulldown among other places.
