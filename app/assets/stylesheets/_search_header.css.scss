@@ -2,24 +2,20 @@
   
   /* Search-area*/
 
-   #search-navbar {
-    background-color: $kenkyu-steelblue;
-   }
-  .navbar-header {
-       background-color: $kenkyu-steelblue;
-       margin-left: -10px;
-   }
-  .container {
+#search-navbar {
+  background-color: $kenkyu-steelblue;
 
-  #logo_label {
-       margin-top: 30px;
-       background-color: $kenkyu-steelblue;
+  .navbar-header {
+    float: none;
+
+    a.title  {
+      color: #fff;
+      font-size: 12pt;
+      line-height: 50px;
+    }
   }
-   #logo_btn-link {
-       color: $white;
-       font-weight: bold; 
-       font-size: $big-fontsize;
-  }
+}
+
   .search-btn {
        background-color: $kenkyu-blue;
        width: 150px;
@@ -28,35 +24,26 @@
   }
 
   .input-group {
-       margin-left: 400px;
-       margin-top: -40px;
-       width: 400px; 
      
       .q.form-control {
-       width: 400px;
        font-size: $medium-fontsize;
     }
   }
   .input-group-addon {
-       margin-left: 100px; 
-       width: 600px;
        border: none;
        background-color: $kenkyu-steelblue;
     }
   .sr-only {
-       width: 400px;
        border: none;
        background-color: $kenkyu-steelblue;
     }
   .search_field {
-      width: 350px;
       background-color: $kenkyu-steelblue;
       color: $white;
       font-size: $big-fontsize;
       font-weight: bold;
       border: none;
     }
-  }
  
     
 

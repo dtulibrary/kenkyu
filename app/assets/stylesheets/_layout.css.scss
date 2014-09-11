@@ -2,8 +2,21 @@
 
 /* Generic layout stuff */
 
+html, body, .h100 {
+  height: 100%;
+}
+
+.h100 {
+  height: auto;
+  min-height: 100%;
+}
+
 .navbar + .navbar {
   margin-top: -$navbar-margin-bottom;
+}
+
+#main-container {
+  padding-bottom: 64pt;
 }
 
 /*
