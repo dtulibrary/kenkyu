@@ -1,15 +1,12 @@
-
+@import 'bootstrap-sprockets';
 @import 'bootstrap';
 
 @import 'blacklight/blacklight';
 @import 'blacklight_range_limit';
 
 @import 'search_header';
-
 @import 'layout';
-
-@import 'show_document';
-
 @import 'document';
 @import 'facets';
 @import 'footer';
+@import 'text';

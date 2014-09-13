@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.1.0'
+gem 'rails', '~> 4.1.0'
 gem 'blacklight', '~> 5.3.0' 
 gem 'blacklight_range_limit'
 gem 'sass-rails', '~> 4.0.3'
@@ -11,6 +11,7 @@ gem 'pg'
 gem 'jbuilder', '~> 2.0'
 gem 'capistrano', '~> 2.0'
 gem 'cancancan'
+gem 'autoprefixer-rails'
 
 group :development, :test do
   gem 'sqlite3'

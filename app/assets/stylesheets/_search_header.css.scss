@@ -1,9 +1,6 @@
- @import 'kenkyu_defaults';
-  
-  /* Search-area*/
-
 #search-navbar {
-  background-color: $kenkyu-steelblue;
+  background-color: #135;
+  background-color: #357;
 
   .navbar-header {
     float: none;
@@ -13,37 +10,24 @@
       font-size: 12pt;
       line-height: 50px;
     }
+
+    .search-query-form {
+      width: 100%;
+      padding-right: 0px;
+
+      .input-group {
+        width: 100%;
+
+        .input-group-btn {
+          width: 1%;
+        }
+      }
+
+      .search-btn {
+        background-color: #579;
+        height: 34px;
+        border-color: #579;
+      }
+    }
   }
 }
-
-  .search-btn {
-       background-color: $kenkyu-blue;
-       width: 150px;
-       margin-left: 5px;
-       font-size: $medium-fontsize;
-  }
-
-  .input-group {
-     
-      .q.form-control {
-       font-size: $medium-fontsize;
-    }
-  }
-  .input-group-addon {
-       border: none;
-       background-color: $kenkyu-steelblue;
-    }
-  .sr-only {
-       border: none;
-       background-color: $kenkyu-steelblue;
-    }
-  .search_field {
-      background-color: $kenkyu-steelblue;
-      color: $white;
-      font-size: $big-fontsize;
-      font-weight: bold;
-      border: none;
-    }
- 
-    
-
