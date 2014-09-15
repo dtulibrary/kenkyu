@@ -41,4 +41,70 @@ module CatalogHelper
       'rdb_sdu'
     end
   end
+
+  def render_journal_info args, format = :index
+    document = args[:document]
+    field = args[:field]
+    [render_journal_title_info(document, format),
+     render_journal_pub_date_info(document, format),
+     render_journal_vol_info(document, format),
+     render_journal_page_info(document, format)].join('').html_safe
+  end 
+ 
+  
+  def render_journal_page_info document, format
+    if document['journal_page_ssf']
+      ", p. #{document['journal_page_ssf'].first}"
+    else
+      ''  
+    end 
+  end 
+
+  def render_journal_vol_info document, format
+    if document['journal_vol_ssf']
+      ", Vol #{document['journal_vol_ssf'].first}"
+    else
+      ''  
+    end 
+  end 
+
+  def render_journal_title_info document, format
+    if document['journal_title_ts']
+      "#{document['journal_title_ts'].first}"
+    else
+      ''
+    end
+  end
+
+  def render_journal_pub_date_info document, format
+    if document['pub_date_tis']
+      ", #{document['pub_date_tis'].first}"
+    else
+      ''
+    end
+  end
+
+  def render_author_list authors
+    list = (document['author_ts']).first
+    return list.join(authors || content_tag(:span, '; ')).html_safe
+  end 
+
+  def snip_abstract args
+    render_abstract_snippet args[:document]
+  end 
+
+  def render_abstract_snippet document
+    snippet = (document['abstract_ts'] || ['No abstract']).first
+    return snippet.size > 500 ? snippet.slice(0, 500) + '...' : snippet
+  end 
+
+  def snip_abstract args
+    render_abstract_snippet args[:document]
+  end 
+
+  def render_abstract_snippet document
+    snippet = (document['abstract_ts'] || ['No abstract']).first
+    return snippet.size > 500 ? snippet.slice(0, 500) + '...' : snippet
+  end 
+
 end
