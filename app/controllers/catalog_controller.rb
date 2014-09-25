@@ -95,12 +95,12 @@ class CatalogController < ApplicationController
     config.add_show_field 'author_ts', :label => 'Authors', :separator => ' ; '
     config.add_show_field 'format', :label => 'Type', :helper_method => :render_format_field_index
     config.add_show_field 'journal_title_ts', :label => 'Published in', :helper_method => :render_journal_info
-    config.add_show_field 'conf_title_ts', :label => 'Conference'
     config.add_show_field 'publisher_ts', :label => 'Publisher'
     config.add_show_field 'doi_ss', :label => 'DOI'
-    config.add_show_field 'isbn_ss', :label => 'ISBN'
+     config.add_show_field 'isbn_ss', :label => 'ISBN'
     config.add_show_field 'issn_ss', :label => 'ISSN'
     config.add_show_field 'abstract_ts', :label => 'Abstract', :helper_method => :snip_abstract
+    config.add_show_field 'conf_title_ts', :label => 'Conference'
     # TODO: Enable this when research area codes are available
     #config.add_show_field 'research_area_ss', :label => 'Research Area', :helper_method => :render_research_area_field 
     config.add_show_field 'research_area_ss', :label => 'Research Area'

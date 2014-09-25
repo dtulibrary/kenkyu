@@ -48,8 +48,8 @@ module CatalogHelper
     [render_journal_title_info(document, format),
      render_journal_pub_date_info(document, format),
      render_journal_vol_info(document, format),
-     render_journal_page_info(document, format),
-     render_journal_issue_info(document, format)].join('').html_safe
+     render_journal_issue_info(document, format),
+     render_journal_page_info(document, format)].join('').html_safe
   end 
  
   
@@ -87,7 +87,7 @@ module CatalogHelper
 
   def render_journal_issue_info document, format
     if document['journal_issue_ssf']
-      ", Issue #{document['journal_issue_ssf'].first}"
+      ", No. #{document['journal_issue_ssf'].first}"
     else
       ''
     end
