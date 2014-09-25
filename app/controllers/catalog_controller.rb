@@ -32,12 +32,18 @@ class CatalogController < ApplicationController
     config.index.display_type_field = 'format'
     config.index.source_id = 'source_ss'
     config.index.affiliation_field = 'affiliation_ts'
+    config.index.doi_id = 'doi_ss'
 
     # solr field configuration for document/show views
     config.show.title_field = 'title_ts'
     config.show.display_type_field = 'format'
     config.show.affiliation_field = 'affiliation_ts'
     config.show.source_id = 'source_ss'
+    config.show.conference_field = 'conf_title_ts'
+    config.show.publisher_field = 'publisher_ts'
+    config.show.isbn_id = 'isbn_ss'
+    config.show.issn_id = 'issn_ss'
+    config.show.doi_id = 'doi_ss'
     # solr fields that will be treated as facets by the blacklight application
     #   The ordering of the field names is the order of the display
     #
@@ -66,6 +72,7 @@ class CatalogController < ApplicationController
     config.add_facet_field 'author_facet', :label => 'Author', :limit => 10
     config.add_facet_field 'research_area_ss', :label => 'Research Area'
     config.add_facet_field 'journal_title_facet', :label => 'Journal Title', :limit => 10
+    config.add_facet_field 'isbn_ss', :label => 'ISBN'
 
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
@@ -73,27 +80,31 @@ class CatalogController < ApplicationController
     config.add_facet_fields_to_solr_request!
 
     # solr fields to be displayed in the index (search results) view
-    #   The ordering of the field names is the order of the display 
+    # The ordering of the field names is the order of the display 
     config.add_index_field 'author_ts', :label => 'Authors', :separator => ' ; '
     config.add_index_field 'format', :label => 'Type', :helper_method => :render_format_field_index
     config.add_index_field 'journal_title_ts', :label => 'Published in', :helper_method => :render_journal_info
+    config.add_index_field 'doi_ss', :label => 'DOI'
     config.add_index_field 'abstract_ts', :label => 'Abstract', :helper_method => :snip_abstract
     # TODO: Enable this when research area codes are available
     #config.add_index_field 'research_area_ss', :label => 'Research Area', :helper_method => :render_research_area_field 
     config.add_index_field 'research_area_ss', :label => 'Research Area'
     config.add_index_field 'source_ss', :label => 'Research Institution', :helper_method => :render_source_field 
-
     # solr fields to be displayed in the show (single result) view
-    #   The ordering of the field names is the order of the display 
+    # The ordering of the field names is the order of the display 
     config.add_show_field 'author_ts', :label => 'Authors', :separator => ' ; '
     config.add_show_field 'format', :label => 'Type', :helper_method => :render_format_field_index
     config.add_show_field 'journal_title_ts', :label => 'Published in', :helper_method => :render_journal_info
+    config.add_show_field 'conf_title_ts', :label => 'Conference'
+    config.add_show_field 'publisher_ts', :label => 'Publisher'
+    config.add_show_field 'doi_ss', :label => 'DOI'
+    config.add_show_field 'isbn_ss', :label => 'ISBN'
+    config.add_show_field 'issn_ss', :label => 'ISSN'
     config.add_show_field 'abstract_ts', :label => 'Abstract', :helper_method => :snip_abstract
     # TODO: Enable this when research area codes are available
     #config.add_show_field 'research_area_ss', :label => 'Research Area', :helper_method => :render_research_area_field 
     config.add_show_field 'research_area_ss', :label => 'Research Area'
     config.add_show_field 'source_ss', :label => 'Research Institution', :helper_method => :render_source_field 
-    
     # "fielded" search configuration. Used by pulldown among other places.
     # For supported keys in hash, see rdoc for Blacklight::SearchFields
     #
