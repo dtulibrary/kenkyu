@@ -86,21 +86,25 @@ class CatalogController < ApplicationController
     config.add_index_field 'abstract_ts', :label => 'Abstract', :helper_method => :snip_abstract
     # TODO: Enable this when research area codes are available
     #config.add_index_field 'research_area_ss', :label => 'Research Area', :helper_method => :render_research_area_field 
+    config.add_index_field 'series_title_ts', :label => 'Series'
     config.add_index_field 'research_area_ss', :label => 'Research Area'
     config.add_index_field 'source_ss', :label => 'Research Institution', :helper_method => :render_source_field 
     # solr fields to be displayed in the show (single result) view
     # The ordering of the field names is the order of the display 
     config.add_show_field 'author_ts', :label => 'Authors', :separator => ' ; '
+    config.add_show_field 'affiliation_ts', :label => 'Affiliations'
     config.add_show_field 'format', :label => 'Type', :helper_method => :render_format_field_index
     config.add_show_field 'journal_title_ts', :label => 'Published in', :helper_method => :render_journal_info
     config.add_show_field 'publisher_ts', :label => 'Publisher'
     config.add_show_field 'doi_ss', :label => 'DOI'
-     config.add_show_field 'isbn_ss', :label => 'ISBN'
+    config.add_show_field 'isbn_ss', :label => 'ISBN'
     config.add_show_field 'issn_ss', :label => 'ISSN'
     config.add_show_field 'abstract_ts', :label => 'Abstract', :helper_method => :snip_abstract
     config.add_show_field 'conf_title_ts', :label => 'Conference'
+    config.add_show_field 'language_ss', :label=> 'Language'
     # TODO: Enable this when research area codes are available
     #config.add_show_field 'research_area_ss', :label => 'Research Area', :helper_method => :render_research_area_field 
+    config.add_show_field 'series_title_ts', :label => 'Series'
     config.add_show_field 'research_area_ss', :label => 'Research Area'
     config.add_show_field 'source_ss', :label => 'Research Institution', :helper_method => :render_source_field 
     # "fielded" search configuration. Used by pulldown among other places.
