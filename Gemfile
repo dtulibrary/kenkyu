@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '~> 4.1.0'
 gem 'blacklight', '~> 5.7.1' 
-gem 'blacklight_range_limit'
+gem 'blacklight_range_limit', :github => 'dtulibrary/blacklight_range_limit'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'

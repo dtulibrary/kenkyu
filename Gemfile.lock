@@ -1,4 +1,13 @@
 GIT
+  remote: git://github.com/dtulibrary/blacklight_range_limit.git
+  revision: a4fdba8819e44d09920e1b4203724a64dabdc4a0
+  specs:
+    blacklight_range_limit (5.0.2)
+      blacklight (>= 5.0.0.pre4, < 6)
+      jquery-rails
+      rails (>= 3.0, < 5.0)
+
+GIT
   remote: git://github.com/dtulibrary/metastore-test_data.git
   revision: 52a2e16c856bcf1a2679a0b969f68ef8023bc5cf
   specs:
@@ -48,10 +57,6 @@ GEM
       nokogiri (~> 1.6)
       rails (>= 3.2.6, < 5)
       rsolr (~> 1.0.6)
-    blacklight_range_limit (5.0.2)
-      blacklight (>= 5.0.0.pre4, < 6)
-      jquery-rails
-      rails (>= 3.0, < 5.0)
     bootstrap-sass (3.2.0.2)
       sass (~> 3.2)
     builder (3.2.2)
@@ -173,7 +178,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   blacklight (~> 5.7.1)
-  blacklight_range_limit
+  blacklight_range_limit!
   cancancan
   capistrano (~> 2.0)
   coffee-rails (~> 4.0.0)
