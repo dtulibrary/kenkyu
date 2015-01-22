@@ -63,3 +63,9 @@ en:
     med: Medical science
     sci: Science/technology
     soc: Social science
+  tools:
+    getit: Get it
+    mendeley: Save to Mendeley
+    metrics:
+        title: Metrics
+        
