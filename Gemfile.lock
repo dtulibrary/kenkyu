@@ -8,6 +8,13 @@ GIT
       rails (>= 3.0, < 5.0)
 
 GIT
+  remote: git://github.com/dtulibrary/findit_font.git
+  revision: f1b557a27ee84c99fca961a3013938e0c94f5664
+  specs:
+    findit_font (0.0.1)
+      railties (>= 3.2)
+
+GIT
   remote: git://github.com/dtulibrary/metastore-test_data.git
   revision: 52a2e16c856bcf1a2679a0b969f68ef8023bc5cf
   specs:
@@ -182,6 +189,7 @@ DEPENDENCIES
   cancancan
   capistrano (~> 2.0)
   coffee-rails (~> 4.0.0)
+  findit_font!
   jbuilder (~> 2.0)
   jettywrapper
   jquery-rails

@@ -16,10 +16,14 @@
 //
 // Required by Blacklight
 //= require blacklight/blacklight
+//= require bootstrap
 //= require_tree .
 
 
 // For blacklight_range_limit built-in JS, if you don't want it you don't need
 // this:
 //= require 'blacklight_range_limit'
+
+// JQuery caret plugin - for getting cursor position in input fields
+//= require jquery.caret.js
 

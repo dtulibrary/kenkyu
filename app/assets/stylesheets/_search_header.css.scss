@@ -11,22 +11,61 @@
       line-height: 50px;
     }
 
-    .search-query-form {
-      width: 100%;
-      padding-right: 0px;
+      
+         .text-field-with-icons {
+            border: 0px solid #d4d4d4;
+            width: 750px; 
+            padding: 2px 2px;
+            border-radius: 5px 0 0 5px;
+            height: 36px;
+            float: left;
+            background-color: white;
+            box-sizing: border-box;
+                 &:focus, &:active, &:hover {
+                   border: 0px dotted blue;  
+           }
+              
+              #q {      
+            width: 650px;
+            border: none;
+            height: 34px;
+            float: left;
+            background-color: white;
+            box-sizing: border-box;
+            border-color: white;
+            margin: -30px -10px 5px 5px;
+            
+            box-shadow: none;
+            font-size: 14px;
+            line-height: 22px;
+            height: 28px;
+        
 
-      .input-group {
-        width: 100%;
+    &:focus, &:active, &:hover {
+      border: 0px dotted blue;
 
-        .input-group-btn {
-          width: 1%;
-        }
-      }
-
-      .search-btn {
-        background-color: #579;
-        border-color: #579;
+      box-shadow: none;
+    }
+          }
+            .icons {
+             display: inline-block;
+             float: right;
+             border-radius: 5px 0 0 5px;
+             background-color: white;
+             width: 50px;
+             height: 34px; 
+             margin-left: 570px;   
+             
+            }
+          }
+       
+         .search-btn {
+         height: 38px;
+         background-color: #579;
+         border-color: #579;
+         margin-left: 748px;
+         margin-top: -65px;
       }
     }
   }
-}
+

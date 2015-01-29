@@ -21,6 +21,7 @@ end
 
 group :assets do
   gem 'therubyracer',  platforms: :ruby
+  gem 'findit_font', :github => 'dtulibrary/findit_font'
 end
 
 group :doc do

@@ -1,8 +1,8 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
-
 @import 'blacklight/blacklight';
 @import 'blacklight_range_limit';
+@import 'findit-font';
 
 @import 'search_header';
 @import 'header';
@@ -12,6 +12,6 @@
 @import 'range_limit';
 @import 'footer';
 @import 'text';
-@import 'modal';
-@import 'catalog';
 @import 'altmetric';
+@import 'catalog';
+@import 'search_help';
