@@ -12,7 +12,7 @@
     }
 
       
-         .text-field-with-icons {
+          .text-field-with-icons {
             border: 0px solid #d4d4d4;
             width: 750px; 
             padding: 2px 2px;
@@ -20,34 +20,18 @@
             height: 36px;
             float: left;
             background-color: white;
-            box-sizing: border-box;
-                 &:focus, &:active, &:hover {
-                   border: 0px dotted blue;  
-           }
-              
+               
               #q {      
             width: 650px;
-            border: none;
-            height: 34px;
+            height: 28px;
             float: left;
             background-color: white;
-            box-sizing: border-box;
-            border-color: white;
+            border: 0px solid #d4d4d4;
             margin: -30px -10px 5px 5px;
-            
             box-shadow: none;
             font-size: 14px;
-            line-height: 22px;
-            height: 28px;
-        
-
-    &:focus, &:active, &:hover {
-      border: 0px dotted blue;
-
-      box-shadow: none;
-    }
-          }
-            .icons {
+            }
+             .icons {
              display: inline-block;
              float: right;
              border-radius: 5px 0 0 5px;
@@ -55,7 +39,6 @@
              width: 50px;
              height: 34px; 
              margin-left: 570px;   
-             
             }
           }
        
@@ -65,7 +48,7 @@
          border-color: #579;
          margin-left: 748px;
          margin-top: -65px;
-      }
-    }
+         }
   }
+}
 
