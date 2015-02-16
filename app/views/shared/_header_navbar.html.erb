@@ -1,15 +1,25 @@
 <div id="header-navbar" class="navbar navbar-inverse navbar-static-top" role="navigation">
   <div class="container">
-    <div class="collapse navbar-collapse" id="user-util-collapse">
-      <%= render :partial=>'/user_util_links' %>
-    </div>
+    <div class="collapse navbar-collapse" id="user-util-collapse"> 
+   <div class="nav navbar-nav pull-right">
+   <ul id="language_link">
+       <% if I18n.locale == I18n.default_locale %>
+       <%= link_to t('blacklight.language_switcher'), :locale => :da %>
+       <% else %>
+       <%= link_to t('blacklight.language_switcher'), :locale => :en %>
+      <% end %>
+    </ul>
   </div>
-</div>
+   <%= render :partial=>'/user_util_links' %>
+  </div>
+  </div>
+ </div>
+
 <div id="search-navbar" class="navbar navbar-default navbar-static-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <div class="row">
-        <div class="col-md-3"><%= link_to 'Danish National Research Database', root_path, :class => 'title' %></div>
+        <div class="col-md-3"><%= link_to t('blacklight.search.form.logo_label'), root_path, :class => 'title' %></div>
         <div class="col-md-9"><%= render_search_bar %></div>
       </div>
     </div>

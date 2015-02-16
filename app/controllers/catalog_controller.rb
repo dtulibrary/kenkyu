@@ -1,12 +1,19 @@
 # -*- encoding : utf-8 -*-
 #
+
+require 'i18n'
 class CatalogController < ApplicationController  
 
   include Blacklight::Catalog
 
   layout 'blacklight'
+  before_filter :set_locale
 
   configure_blacklight do |config|
+    # Ensure I18n load paths are loaded
+    Dir[Rails.root + 'config/locales/**/*.{rb,yml}'].each { |path| I18n.load_path << path }
+    
+
     ## Default parameters to send to solr for all search-like requests. See also SolrHelper#solr_search_params
     config.default_solr_params = { 
       :qt => '/ddf_publ',
@@ -63,15 +70,15 @@ class CatalogController < ApplicationController
     #
     # :show may be set to false if you don't want the facet to be drawn in the 
     # facet bar
-    config.add_facet_field 'format_orig_s', :label => 'Type', :helper_method => :render_format_field_facet
-    config.add_facet_field 'pub_date_tsort', :label => 'Publication Year', :range => {
+    config.add_facet_field 'format_orig_s', :label => I18n.t('blacklight.search.fields.facet.format_orig_s'), :helper_method => :render_format_field_facet
+    config.add_facet_field 'pub_date_tsort', :label => I18n.t('blacklight.search.fields.facet.pub_date_tsort'), :range => {
       :num_segments => 3,
       :assumed_boundaries => [1900, Time.now.year + 2],
     }
-    config.add_facet_field 'source_ss', :label => 'Research Institution', :helper_method => :render_source_field_facet, :limit => 10
-    config.add_facet_field 'author_facet', :label => 'Author', :limit => 10
-    config.add_facet_field 'research_area_ss', :label => 'Research Area'
-    config.add_facet_field 'journal_title_facet', :label => 'Journal Title', :limit => 10
+    config.add_facet_field 'source_ss', :label => I18n.t('blacklight.search.fields.facet.source_ss'), :helper_method => :render_source_field_facet, :limit => 10
+    config.add_facet_field 'author_facet', :label => I18n.t('blacklight.search.fields.facet.author_facet'), :limit => 10
+    config.add_facet_field 'research_area_ss', :label => I18n.t('blacklight.search.fields.facet.research_area_ss')
+    config.add_facet_field 'journal_title_facet', :label => I18n.t('blacklight.search.fields.facet.journal_title_facet'), :limit => 10
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
     # handler defaults, or have no facets.
@@ -79,34 +86,34 @@ class CatalogController < ApplicationController
 
     # solr fields to be displayed in the index (search results) view
     # The ordering of the field names is the order of the display 
-    config.add_index_field 'author_ts', :label => 'Authors', :separator => ' ; '
-    config.add_index_field 'format', :label => 'Type', :helper_method => :render_format_field_index
-    config.add_index_field 'journal_title_ts', :label => 'Published in', :helper_method => :render_journal_info
-    config.add_index_field 'doi_ss', :label => 'DOI'
-    config.add_index_field 'abstract_ts', :label => 'Abstract', :helper_method => :snip_abstract
+    config.add_index_field 'author_ts', :separator => ' ; '
+    config.add_index_field 'format', :helper_method => :render_format_field_index
+    config.add_index_field 'journal_title_ts', :helper_method => :render_journal_info
+    config.add_index_field 'doi_ss'
+    config.add_index_field 'abstract_ts', :helper_method => :snip_abstract
     # TODO: Enable this when research area codes are available
     #config.add_index_field 'research_area_ss', :label => 'Research Area', :helper_method => :render_research_area_field 
-    config.add_index_field 'series_title_ts', :label => 'Series'
-    config.add_index_field 'research_area_ss', :label => 'Research Area'
-    config.add_index_field 'source_ss', :label => 'Research Institution', :helper_method => :render_source_field 
+    config.add_index_field 'series_title_ts'
+    config.add_index_field 'research_area_ss'
+    config.add_index_field 'source_ss', :helper_method => :render_source_field 
     # solr fields to be displayed in the show (single result) view
     # The ordering of the field names is the order of the display 
-    config.add_show_field 'author_ts', :label => 'Authors', :separator => ' ; '
-    config.add_show_field 'affiliation_ts', :label => 'Affiliations'
-    config.add_show_field 'format', :label => 'Type', :helper_method => :render_format_field_index
-    config.add_show_field 'journal_title_ts', :label => 'Published in', :helper_method => :render_journal_info
-    config.add_show_field 'publisher_ts', :label => 'Publisher'
-    config.add_show_field 'doi_ss', :label => 'DOI'
-    config.add_show_field 'isbn_ss', :label => 'ISBN'
-    config.add_show_field 'issn_ss', :label => 'ISSN'
-    config.add_show_field 'abstract_ts', :label => 'Abstract', :helper_method => :snip_abstract
-    config.add_show_field 'conf_title_ts', :label => 'Conference'
-    config.add_show_field 'language_ss', :label=> 'Language'
+    config.add_show_field 'author_ts', :label => 'Forfatter', :separator => ' ; '
+    config.add_show_field 'affiliation_ts'
+    config.add_show_field 'format', :helper_method => :render_format_field_index
+    config.add_show_field 'journal_title_ts',:helper_method => :render_journal_info
+    config.add_show_field 'publisher_ts'
+    config.add_show_field 'doi_ss'
+    config.add_show_field 'isbn_ss'
+    config.add_show_field 'issn_ss'
+    config.add_show_field 'abstract_ts', :helper_method => :snip_abstract
+    config.add_show_field 'conf_title_ts'
+    config.add_show_field 'language_ss'
     # TODO: Enable this when research area codes are available
     #config.add_show_field 'research_area_ss', :label => 'Research Area', :helper_method => :render_research_area_field 
-    config.add_show_field 'series_title_ts', :label => 'Series'
-    config.add_show_field 'research_area_ss', :label => 'Research Area'
-    config.add_show_field 'source_ss', :label => 'Research Institution', :helper_method => :render_source_field 
+    config.add_show_field 'series_title_ts'
+    config.add_show_field 'research_area_ss'
+    config.add_show_field 'source_ss', :helper_method => :render_source_field 
     # "fielded" search configuration. Used by pulldown among other places.
     # For supported keys in hash, see rdoc for Blacklight::SearchFields
     #

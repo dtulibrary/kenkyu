@@ -19,11 +19,21 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+da:
   blacklight:
-    application_name: Danish National Research Database-Den Danske Forskningsdatabase
-    language_switcher: Danish
+    application_name: Den Danske Forskningsdatabase-Danish National Research Database
+    back_to_search: Tilbage til Søgning
+    footer:
+      text_html: "Copyright &copy; 1998-%{year} Danmarks Elektroniske Fag- go Forskningsbibliotek - Danske Agentur for Bibliotek og Medier </br>i samarbejde med Kulturministeriet, Uddannelses- og Forskningsministeriet samt Undervisningsministeriet"    
+    header_links:
+        search_history: Historik
+    language_switcher: English
+    range_limit: 
+      submit_limit: Begræns
+      remove_limit: Slet
     search:
+      entry_pagination_info:
+        other: Andre
       fields:
         index:
           abstract_ts: Abstract
@@ -47,12 +57,12 @@ en:
           research_area_ss: Research Area
           source_ss: Research Institution
         facet:
-          author_facet: Author
+          author_facet: Forfatter
           format_orig_s: Type
-          journal_title_facet: Journal Titel
-          pub_date_tsort: Publication Year
-          research_area_ss: Research Area
-          source_ss: Research Institution
+          journal_title_facet: Tidskriftets Titel
+          pub_date_tsort: Udgivelsesår
+          research_area_ss: Forskningsområde
+          source_ss: Forskningsinstitution
         show:
           abstract_ts: Abstract
           affiliation_ts: Affiliations
@@ -74,18 +84,30 @@ en:
           pub_date_tsort: Publication Year
           research_area_ss: Research Area
           source_ss: Research Institution
+
+      filters:
+        title: "I søgte efter:"
+        pub_date_tsort: Udgivelsesår
       form:
-        logo_label: Danish National Research Database
-      start_over: Start Over
-    
+        logo_label: Den Danske Forskningsdatabase
+        q: Søg...
+        submit: Søg ...
+      pagination_info: 
+        pages: Sider
+      per_page:
+        button_label: 15 per side 
+      sort:
+        label: Sorter efter relevans
+      start_over: Start forfra
+
   mxd_type_labels:
-    dja: Journal article
+    dja: Tidskrift
     djl: Letter to the editor
     djc: Journal comment
     djr: Journal review article
     djb: Journal book review
     dna: Newspaper article
-    db:  Book
+    db:  Bog
     dba: Book chapter
     dbp: Book preface, encycl. entry
     dr:  Report
@@ -106,25 +128,30 @@ en:
     dd:  Data set
     drt: Radio/TV broadcast
     dx:  Exhibition catalogue
-    do:  Other
+    do:  Andre
   research_area_labels:
-    hum: Humanities
-    med: Medical science
-    sci: Science/technology
-    soc: Social science
+    hum: Humaniora
+    med: Medicinsvidenksab
+    sci: Videnskab/teknologi
+    soc: Samfundsfag
   source_labels:
-    orbit: Technical University of Denmark
-    rdb_ku: University of Copenhagen
-    rdb_itu: IT University of Copenhagen
-    rdb_au: Aarhus University
-    rdb_cbs: Copenhagen Business School
-    rdb_ruc: Roskilde University
-    rdb_sdu: University of Southern Denmark
-    rdb_vbn: Aalborg University
+    orbit: Danmarks Tekniske Universitet
+    rdb_ku: Københavns Universitet
+    rdb_itu: IT Universitet
+    rdb_au: Aarhus Universitet
+    rdb_cbs: CBS Handelshøjskolen
+    rdb_ruc: Roskilde Universitet
+    rdb_sdu: Syddansk Universitet
+    rdb_vbn: Aalborg Universitet
   tools:
     getit: 'Get it'
     mendeley: Save to Mendeley
-    metrics: 
-      title: 'Metrics'
-    availability: Available
-    get: 'GET IT'   
+    metrics:
+        title: 'Metrics'
+  views:
+    pagination:
+      next: Næste
+      previous: Tidligere
+    pagination_compact:
+      next: Næste
+      previous: Tidligere

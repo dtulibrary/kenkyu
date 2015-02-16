@@ -1,11 +1,11 @@
-en:
+da:
   blacklight:
-    application_name: 'Danish National Research Database-Den Danske Forskningsdatabase'
+    application_name: 'Den Danske Forskningsdatabase-Danish National Research Database'
     search:
       form:
-        logo_label: 'Danish National Research Database'
+        logo_label: 'Den Danske Forskningsdatabase'
       facets:
-         more: 'more »'
+        more: 'mere »'
     footer:
       text_html: "Copyright &copy; 1998-%{year} Denmark's Electronic Research Library &mdash; Danish Agency for Libraries and Media<br>in cooperation with the Ministry of Culture, Ministry of Science, Technology and Innovation and Ministry of Education"
     application_name: 'kenkyu'
