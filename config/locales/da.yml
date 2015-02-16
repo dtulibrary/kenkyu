@@ -1,0 +1,157 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+da:
+  blacklight:
+    application_name: Den Danske Forskningsdatabase-Danish National Research Database
+    back_to_search: Tilbage til Søgning
+    footer:
+      text_html: "Copyright &copy; 1998-%{year} Danmarks Elektroniske Fag- go Forskningsbibliotek - Danske Agentur for Bibliotek og Medier </br>i samarbejde med Kulturministeriet, Uddannelses- og Forskningsministeriet samt Undervisningsministeriet"    
+    header_links:
+        search_history: Historik
+    language_switcher: English
+    range_limit: 
+      submit_limit: Begræns
+      remove_limit: Slet
+    search:
+      entry_pagination_info:
+        other: Andre
+      fields:
+        index:
+          abstract_ts: Abstract
+          affiliation_ts: Affiliations
+          author_ts: Authors
+          conf_title_ts: Conference
+          doi_ss: DOI
+          format: Type
+          isbn_ss: ISBN
+          issn_ss: ISSN
+          journal_title_ts: Published in
+          language_ss: Language
+          publisher_ts: Publisher
+          research_area_ss: Research Area
+          series_title_ts: Series
+          source_ss: Research Institution
+          author_facet: Author
+          format_orig_s: Type
+          journal_title_facet: Journal Title
+          pub_date_tsort: Publication Year
+          research_area_ss: Research Area
+          source_ss: Research Institution
+        facet:
+          author_facet: Forfatter
+          format_orig_s: Type
+          journal_title_facet: Tidskriftets Titel
+          pub_date_tsort: Udgivelsesår
+          research_area_ss: Forskningsområde
+          source_ss: Forskningsinstitution
+        show:
+          abstract_ts: Abstract
+          affiliation_ts: Affiliations
+          author_ts: Authors
+          conf_title_ts: Conference
+          doi_ss: DOI
+          format: Type
+          isbn_ss: ISBN
+          issn_ss: ISSN
+          journal_title_ts: Published in
+          language_ss: Language
+          publisher_ts: Publisher
+          research_area_ss: Research Area
+          series_title_ts: Series
+          source_ss: Research Institution
+          author_facet: Author
+          format_orig_s: Type
+          journal_title_facet: Journal Title
+          pub_date_tsort: Publication Year
+          research_area_ss: Research Area
+          source_ss: Research Institution
+
+      filters:
+        title: "I søgte efter:"
+        pub_date_tsort: Udgivelsesår
+      form:
+        logo_label: Den Danske Forskningsdatabase
+        q: Søg...
+        submit: Søg ...
+      pagination_info: 
+        pages: Sider
+      per_page:
+        button_label: 15 per side 
+      sort:
+        label: Sorter efter relevans
+      start_over: Start forfra
+
+  mxd_type_labels:
+    dja: Tidskrift
+    djl: Letter to the editor
+    djc: Journal comment
+    djr: Journal review article
+    djb: Journal book review
+    dna: Newspaper article
+    db:  Bog
+    dba: Book chapter
+    dbp: Book preface, encycl. entry
+    dr:  Report
+    dra: Report chapter
+    dcp: Conference paper
+    dca: Conference abstract
+    dco: Conference poster
+    dct: Conference talk
+    dw:  Working paper, (pr)eprint
+    dln: Lecture notes
+    dl:  Lecture
+    dp:  Patent
+    dtd: Thesis Doctoral
+    dtp: Thesis PhD
+    dtm: Thesis Master
+    dts: Student report
+    dso: Software
+    dd:  Data set
+    drt: Radio/TV broadcast
+    dx:  Exhibition catalogue
+    do:  Andre
+  research_area_labels:
+    hum: Humaniora
+    med: Medicinsvidenksab
+    sci: Videnskab/teknologi
+    soc: Samfundsfag
+  source_labels:
+    orbit: Danmarks Tekniske Universitet
+    rdb_ku: Københavns Universitet
+    rdb_itu: IT Universitet
+    rdb_au: Aarhus Universitet
+    rdb_cbs: CBS Handelshøjskolen
+    rdb_ruc: Roskilde Universitet
+    rdb_sdu: Syddansk Universitet
+    rdb_vbn: Aalborg Universitet
+  tools:
+    getit: 'Get it'
+    mendeley: Save to Mendeley
+    metrics:
+        title: 'Metrics'
+  views:
+    pagination:
+      next: Næste
+      previous: Tidligere
+    pagination_compact:
+      next: Næste
+      previous: Tidligere
