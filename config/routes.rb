@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
+
+  scope "(:locale)", :locale => /#{I18n.available_locales.join("|")}/ do
   root :to => "catalog#index"
+
+  
   blacklight_for :catalog
 
 
@@ -11,5 +15,5 @@ Rails.application.routes.draw do
     get   'tags',                                   :to => 'tags#manage',                           :as => 'manage_tags'
 
 
-  
+  end
 end

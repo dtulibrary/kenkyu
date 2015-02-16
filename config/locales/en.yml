@@ -20,6 +20,64 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  blacklight:
+    application_name: Danish National Research Database-Den Danske Forskningsdatabase
+    language_switcher: Danish
+    search:
+      fields:
+        index:
+          abstract_ts: Abstract
+          affiliation_ts: Affiliations
+          author_ts: Authors
+          conf_title_ts: Conference
+          doi_ss: DOI
+          format: Type
+          isbn_ss: ISBN
+          issn_ss: ISSN
+          journal_title_ts: Published in
+          language_ss: Language
+          publisher_ts: Publisher
+          research_area_ss: Research Area
+          series_title_ts: Series
+          source_ss: Research Institution
+          author_facet: Author
+          format_orig_s: Type
+          journal_title_facet: Journal Title
+          pub_date_tsort: Publication Year
+          research_area_ss: Research Area
+          source_ss: Research Institution
+        facet:
+          author_facet: Author
+          format_orig_s: Type
+          journal_title_facet: Journal Titel
+          pub_date_tsort: Publication Year
+          research_area_ss: Research Area
+          source_ss: Research Institution
+        show:
+          abstract_ts: Abstract
+          affiliation_ts: Affiliations
+          author_ts: Authors
+          conf_title_ts: Conference
+          doi_ss: DOI
+          format: Type
+          isbn_ss: ISBN
+          issn_ss: ISSN
+          journal_title_ts: Published in
+          language_ss: Language
+          publisher_ts: Publisher
+          research_area_ss: Research Area
+          series_title_ts: Series
+          source_ss: Research Institution
+          author_facet: Author
+          format_orig_s: Type
+          journal_title_facet: Journal Title
+          pub_date_tsort: Publication Year
+          research_area_ss: Research Area
+          source_ss: Research Institution
+      form:
+        logo_label: Danish National Research Database
+      start_over: Start Over
+    
   mxd_type_labels:
     dja: Journal article
     djl: Letter to the editor
@@ -49,6 +107,11 @@ en:
     drt: Radio/TV broadcast
     dx:  Exhibition catalogue
     do:  Other
+  research_area_labels:
+    hum: Humanities
+    med: Medical science
+    sci: Science/technology
+    soc: Social science
   source_labels:
     orbit: Technical University of Denmark
     rdb_ku: University of Copenhagen
@@ -58,14 +121,10 @@ en:
     rdb_ruc: Roskilde University
     rdb_sdu: University of Southern Denmark
     rdb_vbn: Aalborg University
-  research_area_labels:
-    hum: Humanities
-    med: Medical science
-    sci: Science/technology
-    soc: Social science
   tools:
-    getit: Get it
+    getit: 'Get it'
     mendeley: Save to Mendeley
-    metrics:
-        title: Metrics
-        
+    metrics: 
+      title: 'Metrics'
+    availability: Available
+    get: 'GET IT'   

@@ -5,7 +5,7 @@ en:
       form:
         logo_label: 'Danish National Research Database'
       facets:
-         more: 'more»'
+         more: 'more »'
     footer:
       text_html: "Copyright &copy; 1998-%{year} Denmark's Electronic Research Library &mdash; Danish Agency for Libraries and Media<br>in cooperation with the Ministry of Culture, Ministry of Science, Technology and Innovation and Ministry of Education"
     application_name: 'kenkyu'
