@@ -40,16 +40,10 @@ en:
           research_area_ss: Research Area
           series_title_ts: Series
           source_ss: Research Institution
-          author_facet: Author
-          format_orig_s: Type
-          journal_title_facet: Journal Title
-          pub_date_tsort: Publication Year
-          research_area_ss: Research Area
-          source_ss: Research Institution
         facet:
           author_facet: Author
           format_orig_s: Type
-          journal_title_facet: Journal Titel
+          journal_title_facet: Titel
           pub_date_tsort: Publication Year
           research_area_ss: Research Area
           source_ss: Research Institution
@@ -67,12 +61,6 @@ en:
           publisher_ts: Publisher
           research_area_ss: Research Area
           series_title_ts: Series
-          source_ss: Research Institution
-          author_facet: Author
-          format_orig_s: Type
-          journal_title_facet: Journal Title
-          pub_date_tsort: Publication Year
-          research_area_ss: Research Area
           source_ss: Research Institution
       form:
         logo_label: Danish National Research Database
@@ -122,9 +110,8 @@ en:
     rdb_sdu: University of Southern Denmark
     rdb_vbn: Aalborg University
   tools:
-    getit: 'Get it'
+    getit: "Get it"
     mendeley: Save to Mendeley
-    metrics: 
-      title: 'Metrics'
+    metrics: "Metrics"
     availability: Available
     get: 'GET IT'   

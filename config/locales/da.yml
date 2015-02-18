@@ -31,60 +31,49 @@ da:
     range_limit: 
       submit_limit: Begræns
       remove_limit: Slet
+      range_begin: Begynd
+      range_end: Slut
     search:
       entry_pagination_info:
         other: Andre
       fields:
         index:
-          abstract_ts: Abstract
-          affiliation_ts: Affiliations
-          author_ts: Authors
-          conf_title_ts: Conference
+          abstract_ts: Abstrakt
+          affiliation_ts: Tilhørsforhold
+          author_ts: Forfattere
+          conf_title_ts: Konference
           doi_ss: DOI
           format: Type
           isbn_ss: ISBN
           issn_ss: ISSN
-          journal_title_ts: Published in
-          language_ss: Language
-          publisher_ts: Publisher
-          research_area_ss: Research Area
-          series_title_ts: Series
-          source_ss: Research Institution
-          author_facet: Author
-          format_orig_s: Type
-          journal_title_facet: Journal Title
-          pub_date_tsort: Publication Year
-          research_area_ss: Research Area
-          source_ss: Research Institution
+          journal_title_ts: Udgivet i
+          language_ss: Sprog
+          publisher_ts: Udgiver
+          research_area_ss: Forskningsområde
+          series_title_ts: Serie
+          source_ss: Forskningsinstitution
         facet:
           author_facet: Forfatter
           format_orig_s: Type
-          journal_title_facet: Tidskriftets Titel
+          journal_title_facet: Titel
           pub_date_tsort: Udgivelsesår
           research_area_ss: Forskningsområde
           source_ss: Forskningsinstitution
         show:
-          abstract_ts: Abstract
-          affiliation_ts: Affiliations
-          author_ts: Authors
-          conf_title_ts: Conference
+          abstract_ts: Abstrakt
+          affiliation_ts: Tilhørsforhold
+          author_ts: Forfattere
+          conf_title_ts: Konference
           doi_ss: DOI
           format: Type
           isbn_ss: ISBN
           issn_ss: ISSN
-          journal_title_ts: Published in
-          language_ss: Language
-          publisher_ts: Publisher
-          research_area_ss: Research Area
-          series_title_ts: Series
-          source_ss: Research Institution
-          author_facet: Author
-          format_orig_s: Type
-          journal_title_facet: Journal Title
-          pub_date_tsort: Publication Year
-          research_area_ss: Research Area
-          source_ss: Research Institution
-
+          journal_title_ts: Udgivet i
+          language_ss: Sprog
+          publisher_ts: Udgiver
+          research_area_ss: Forskningsområde
+          series_title_ts: Serie
+          source_ss: Forskningsinstitution
       filters:
         title: "I søgte efter:"
         pub_date_tsort: Udgivelsesår
@@ -92,10 +81,6 @@ da:
         logo_label: Den Danske Forskningsdatabase
         q: Søg...
         submit: Søg ...
-      pagination_info: 
-        pages: Sider
-      per_page:
-        button_label: 15 per side 
       sort:
         label: Sorter efter relevans
       start_over: Start forfra
@@ -144,10 +129,9 @@ da:
     rdb_sdu: Syddansk Universitet
     rdb_vbn: Aalborg Universitet
   tools:
-    getit: 'Get it'
+    getit: "Hent"
     mendeley: Save to Mendeley
-    metrics:
-        title: 'Metrics'
+    metrics: "Matrikler"  
   views:
     pagination:
       next: Næste

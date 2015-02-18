@@ -98,7 +98,7 @@ class CatalogController < ApplicationController
     config.add_index_field 'source_ss', :helper_method => :render_source_field 
     # solr fields to be displayed in the show (single result) view
     # The ordering of the field names is the order of the display 
-    config.add_show_field 'author_ts', :label => 'Forfatter', :separator => ' ; '
+    config.add_show_field 'author_ts', :separator => ' ; '
     config.add_show_field 'affiliation_ts'
     config.add_show_field 'format', :helper_method => :render_format_field_index
     config.add_show_field 'journal_title_ts',:helper_method => :render_journal_info
