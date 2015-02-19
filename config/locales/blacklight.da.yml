@@ -1,4 +1,11 @@
 da:
+  views:
+    pagination:
+      next: Næste
+      previous: Tidligere
+    pagination_compact:
+      next: Næste
+      previous: Tidligere
   blacklight:
     application_name: 'Den Danske Forskningsdatabase-Danish National Research Database'
     entry_name:
@@ -44,16 +51,27 @@ da:
           title: '%{document_title} - %{application_name}'
           label: '%{label}:'
       title: '%{application_name} Søgeresultater'
+      zero_results:
+        title: "Ingen resultater blev fundet for din søgning "
+        modify_search: "Prøv at ændre din søgning"
+        use_fewer_keywords: "Brug få ord til at starte med, og brug linker til venstre bagefter for at rense din søgning."
+        search_fields: "I søgte efter %{search_fields}"
+        search_everything: "Prøv at søge alt"
     footer:
       text_html: "Copyright &copy; 1998-%{year} Danmarks Elektroniske Fag- go Forskningsbibliotek - Danske Agentur for Bibliotek og Medier </br>i samarbejde med Kulturministeriet, Uddannelses- og Forskningsministeriet samt Undervisningsministeriet"    
     application_name: 'kenkyu'
     loremipsum_del1: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent purus arcu, sagittis ac elementum quis, pulvinar et dui. Aliquam quis leo vitae neque sagittis placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla orci neque, dignissim nec dapibus quis, suscipit vitae quam. Nam laoreet arcu vitae urna commodo, at luctus lectus tempor. Morbi nec velit sed dolor accumsan rutrum vitae a nisl. Sed facilisis faucibus purus. Ut sit amet lorem maximus, rutrum orci nec, tincidunt mi. Nunc eget rhoncus nulla. Phasellus tristique risus a orci egestas, eget volutpat metus placerat. Morbi velit tortor, rhoncus et nulla in, venenatis faucibus ipsum. Vivamus pharetra dolor vel finibus feugiat. In dui velit, pulvinar quis blandit at, venenatis vel nibh. Pellentesque vulputate risus a eros tincidunt auctor. Nam in cursus felis.'
     loremipsum_del2: ' Aenean scelerisque eget magna ut gravida. Nullam feugiat venenatis diam, bibendum accumsan massa consectetur sed. Etiam cursus maximus turpis, molestie lobortis orci. Etiam eget sodales nisi. Praesent viverra augue sed metus ultrices, nec posuere diam posuere. Aenean convallis dolor ut leo faucibus fringilla. Etiam venenatis a turpis sed semper. Integer lobortis, tellus at vehicula rutrum, quam elit lacinia risus, blandit mollis libero tortor ut libero. Nullam semper, ex at placerat rutrum, lorem massa accumsan ipsum, sit amet convallis arcu arcu sit amet libero. Nulla facilisi.'
     loremipsum_del3: ' Phasellus posuere nunc id elementum suscipit. In quis libero sed eros dignissim euismod. Vivamus urna nisi, sollicitudin a ullamcorper nec, faucibus eu sapien. Maecenas fringilla convallis neque, sit amet vulputate nulla aliquet vitae. Integer vehicula, magna a malesuada vehicula, leo mi ornare felis, in dapibus lorem quam nec eros. Praesent vel efficitur ex. Aliquam porta enim ut aliquam elementum. Aenean pellentesque leo a libero finibus, sit amet mollis dolor tincidunt. Cras pretium viverra lectus, commodo tristique lectus interdum vel. Nunc vel feugiat augue. Phasellus tempor sed felis sed fringilla. Interdum et malesuada fames ac ante ipsum primis in faucibus.' 
+    search_history:
+      clear:
+        action_title: 'Rens Søgehistorik'
+        action_confirm: 'Rens jeres søgehistorik?'
+        success: 'Renset jeres søgehistorik.'
+        failure: 'Der opstod problemer,da jeres søgehistorik var renset .'
+      title: 'Søgehistorik'
+      no_history: 'I har ingen søgehistorik'
+      recent: 'Jeres seneste søgninger'
+      forget: 'glem'
+      save: 'gem'
     search_results: 'Søgeresultater'
-    zero_results:
-        title: "Ingen resultater blev fundet for din søgning "
-        modify_search: "Prøv at ændre din søgning"
-        use_fewer_keywords: "Brug fewer ord til at starte med, brug linker til venstre"
-        search_fields: "I søgte efter %{search_fields}"
-        search_everything: "Prøv at søge alt"

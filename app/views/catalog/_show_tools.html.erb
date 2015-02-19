@@ -12,7 +12,6 @@
     <div class="panel-title"><%= t'kenkyu.tools.getit' %></div>
   </div>
   <div class="panel-body">
-    <h5>Institutional Repositories</h5>
     <% (@document['backlink_ss'] || []).each do |link| %>
       <div><%= link_to t("source_labels.#{get_backlink_origin link}"), link, :target => '_blank' %></div>
     <% end %>

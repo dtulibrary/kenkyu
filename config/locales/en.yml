@@ -43,7 +43,7 @@ en:
         facet:
           author_facet: Author
           format_orig_s: Type
-          journal_title_facet: Titel
+          journal_title_facet: Journal Titel
           pub_date_tsort: Publication Year
           research_area_ss: Research Area
           source_ss: Research Institution
@@ -109,9 +109,11 @@ en:
     rdb_ruc: Roskilde University
     rdb_sdu: University of Southern Denmark
     rdb_vbn: Aalborg University
-  tools:
-    getit: "Get it"
-    mendeley: Save to Mendeley
-    metrics: "Metrics"
-    availability: Available
-    get: 'GET IT'   
+  kenkyu:
+    tools:
+      getit: Publication available at
+      mendeley: Save to Mendeley
+      metrics: Metrics
+      availability: Availability
+      get: 'GET IT' 
+    

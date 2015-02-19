@@ -35,7 +35,8 @@ da:
       range_end: Slut
     search:
       entry_pagination_info:
-        other: Andre
+        one: '<strong>1 af 1</strong>'
+        other: '<strong>%{current}</strong> af <strong>%{total}</strong>'
       fields:
         index:
           abstract_ts: Abstrakt
@@ -55,7 +56,7 @@ da:
         facet:
           author_facet: Forfatter
           format_orig_s: Type
-          journal_title_facet: Titel
+          journal_title_facet: Tidskriftets Titel
           pub_date_tsort: Udgivelsesår
           research_area_ss: Forskningsområde
           source_ss: Forskningsinstitution
@@ -128,14 +129,11 @@ da:
     rdb_ruc: Roskilde Universitet
     rdb_sdu: Syddansk Universitet
     rdb_vbn: Aalborg Universitet
-  tools:
-    getit: "Hent"
-    mendeley: Save to Mendeley
-    metrics: "Matrikler"  
-  views:
-    pagination:
-      next: Næste
-      previous: Tidligere
-    pagination_compact:
-      next: Næste
-      previous: Tidligere
+  
+  kenkyu:
+    tools: 
+      getit: Publikationen tilgængelig hos
+      mendeley: Save to Mendeley
+      metrics: Metrikker
+      availability: Tilgængelig hos
+    

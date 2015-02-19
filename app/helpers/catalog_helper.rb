@@ -115,5 +115,13 @@ module CatalogHelper
     snippet = (document['abstract_ts'] || ['No abstract']).first
     return snippet.size > 500 ? snippet.slice(0, 500) + '...' : snippet
   end 
+ 
+ ##
+  # Look up the current per page value, or the default if none if set
+  # 
+  # @return [Integer]
+  def current_per_page
+    (@response.rows if @response and @response.rows > 0) || params.fetch(:per_page, default_per_page).to_i
+  end
 
 end
