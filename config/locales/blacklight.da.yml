@@ -40,7 +40,7 @@ da:
           label: '%{label}:'
       pagination_info:
         single_item_found: '<strong>1</strong> %{entry_name} blev fundet'
-        no_items_found: '%{entry_name} blev ikke fundet'
+        no_items_found: ' '
         pages:
           one: '<strong>%{start_num}</strong> - <strong>%{end_num}</strong> af <strong>%{total_num}</strong>'
           other: '<strong>%{start_num}</strong> - <strong>%{end_num}</strong> af <strong>%{total_num}</strong>'
@@ -52,6 +52,7 @@ da:
           label: '%{label}:'
       title: '%{application_name} Søgeresultater'
       zero_results:
+
         title: "Søgningen gav intet resultat. "
         modify_search: "Klik evt. på spørgsmålstegnet i søgeboksen for yderligere hjælp. "
         use_fewer_keywords: ''

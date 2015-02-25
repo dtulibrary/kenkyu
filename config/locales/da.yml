@@ -85,6 +85,8 @@ da:
       sort:
         label: Sorter efter relevans
       start_over: Start forfra
+      rss_feed: 'RSS for results'
+      atom_feed: 'Atom for results'
 
   mxd_type_labels:
     dja: Tidsskrift-artikel

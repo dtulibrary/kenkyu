@@ -65,6 +65,8 @@ en:
       form:
         logo_label: Danish National Research Database
       start_over: Start Over
+      rss_feed: 'RSS for results'
+      atom_feed: 'Atom for results'
     
   mxd_type_labels:
     dja: Journal article
