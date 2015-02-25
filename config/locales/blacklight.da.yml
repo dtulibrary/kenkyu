@@ -29,7 +29,7 @@ da:
           pub_date_tsort: Udgivelsesår
       fields:
       filters:
-        title: 'I søgte efter:'
+        title: 'Du søgte efter:'
         label: '%{label}:'
         remove:
           value: 'Slet begrænsning %{value}'
@@ -52,11 +52,9 @@ da:
           label: '%{label}:'
       title: '%{application_name} Søgeresultater'
       zero_results:
-        title: "Ingen resultater blev fundet for din søgning "
-        modify_search: "Prøv at ændre din søgning"
-        use_fewer_keywords: "Brug få ord til at starte med, og brug linker til venstre bagefter for at rense din søgning."
-        search_fields: "I søgte efter %{search_fields}"
-        search_everything: "Prøv at søge alt"
+        title: "Søgningen gav intet resultat. "
+        modify_search: "Klik evt. på spørgsmålstegnet i søgeboksen for yderligere hjælp. "
+        use_fewer_keywords: ''
     footer:
       text_html: "Copyright &copy; 1998-%{year} Danmarks Elektroniske Fag- go Forskningsbibliotek - Danske Agentur for Bibliotek og Medier </br>i samarbejde med Kulturministeriet, Uddannelses- og Forskningsministeriet samt Undervisningsministeriet"    
     application_name: 'kenkyu'
@@ -66,12 +64,12 @@ da:
     search_history:
       clear:
         action_title: 'Rens Søgehistorik'
-        action_confirm: 'Rens jeres søgehistorik?'
-        success: 'Renset jeres søgehistorik.'
-        failure: 'Der opstod problemer,da jeres søgehistorik var renset .'
+        action_confirm: 'Rens din søgehistorik?'
+        success: 'Din søgehistorik blev renset.'
+        failure: 'Der opstod problemer,da din søgehistorik var renset .'
       title: 'Søgehistorik'
-      no_history: 'I har ingen søgehistorik'
-      recent: 'Jeres seneste søgninger'
+      no_history: 'Du har ingen søgehistorik'
+      recent: 'Dine seneste søgninger'
       forget: 'glem'
       save: 'gem'
     search_results: 'Søgeresultater'

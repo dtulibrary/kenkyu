@@ -10,7 +10,7 @@ en:
         one: '<strong>1 of 1</strong>'
         other: '<strong>%{current}</strong> of <strong>%{total}</strong>'
       facets:
-        more: 'mere »'
+        more: 'more »'
         label: '%{label}:'
         count: '%{number}'
       filters:

@@ -76,7 +76,7 @@ da:
           series_title_ts: Serie
           source_ss: Forskningsinstitution
       filters:
-        title: "I søgte efter:"
+        title: "Du søgte efter:"
         pub_date_tsort: Udgivelsesår
       form:
         logo_label: Den Danske Forskningsdatabase
@@ -87,45 +87,45 @@ da:
       start_over: Start forfra
 
   mxd_type_labels:
-    dja: Tidskrift
-    djl: Letter to the editor
-    djc: Journal comment
-    djr: Journal review article
-    djb: Journal book review
-    dna: Newspaper article
+    dja: Tidsskrift-artikel
+    djl: Tidsskrift-brev til redaktøren
+    djc: Tidsskrift-kommentar
+    djr: Tidsskrifts-review article
+    djb: Tidsskrifts-anmeldelse
+    dna: Avis-artikel
     db:  Bog
-    dba: Book chapter
-    dbp: Book preface, encycl. entry
-    dr:  Report
-    dra: Report chapter
-    dcp: Conference paper
-    dca: Conference abstract
-    dco: Conference poster
-    dct: Conference talk
-    dw:  Working paper, (pr)eprint
-    dln: Lecture notes
-    dl:  Lecture
+    dba: Bog-kapitel
+    dbp: Bog-forord, leksikonartikel
+    dr:  Rapport
+    dra: Rapport-kapitel
+    dcp: Konference-paper
+    dca: Konference-abstract
+    dco: Konference-plakat
+    dct: Konference-foredrag
+    dw:  Arbejdspapir, (pr)eprint
+    dln: Undervisning-noter
+    dl:  Undervisning-forelæsning
     dp:  Patent
-    dtd: Thesis Doctoral
-    dtp: Thesis PhD
-    dtm: Thesis Master
-    dts: Student report
+    dtd: Afhandling-Doktor
+    dtp: Afhandling-Ph.D.
+    dtm: Afhandling- Kandidat
+    dts: Studenterrapport
     dso: Software
-    dd:  Data set
-    drt: Radio/TV broadcast
+    dd:  Datasæt
+    drt: Radio/Tv-udsendelse
     dx:  Exhibition catalogue
-    do:  Andre
+    do:  Andet
   research_area_labels:
     hum: Humaniora
     med: Medicinsvidenksab
-    sci: Videnskab/teknologi
-    soc: Samfundsfag
+    sci: Videnskab/Teknologi
+    soc: Samfundsvidenskab
   source_labels:
     orbit: Danmarks Tekniske Universitet
     rdb_ku: Københavns Universitet
-    rdb_itu: IT Universitet
+    rdb_itu: IT Universitet i København
     rdb_au: Aarhus Universitet
-    rdb_cbs: CBS Handelshøjskolen
+    rdb_cbs: Copenhagen Business School
     rdb_ruc: Roskilde Universitet
     rdb_sdu: Syddansk Universitet
     rdb_vbn: Aalborg Universitet
@@ -136,4 +136,20 @@ da:
       mendeley: Save to Mendeley
       metrics: Metrikker
       availability: Tilgængelig hos
-    
+    search:
+      form:
+        clear_search_field_text_hover: Slet søgetermerne
+        show_search_help_text_hover: Vis Søgetips
+      help:
+        example: Eksempel
+        finds_records: Finder dokumenter
+        water: water
+        containing_word: "som indeholder ordet 'water'."
+        water_supplies: water supplies
+        containing_phrase: "som indeholder tekststrengen 'water supplies'."
+        author: "forfatter:"
+        phrase_author_field: "som indeholder tekststrengen 'Doe, John' i feltet: Forfatter."
+        title: "titel:"
+        containing_ieee: "som indeholder ordet 'IEEE' i feltet: Titel."
+        more_help: "Brug for mere hjælp?"
+        search_how: Søgetips
