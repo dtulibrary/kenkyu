@@ -112,12 +112,11 @@ en:
     rdb_sdu: University of Southern Denmark
     rdb_vbn: Aalborg University
   kenkyu:
-    tools:
-      getit: Publication available at
-      mendeley: Save to Mendeley
-      metrics: Metrics
-      availability: Availability
-      get: 'GET IT' 
+    research_area_labels:
+      hum: Humanities
+      med: Medical science
+      sci: Science/technology
+      soc: Social science
     search:
       form:
         clear_search_field_text_hover: Clear search field
@@ -135,3 +134,9 @@ en:
         containing_ieee: "containing the word 'IEEE' in the title field."
         more_help: "Need more help?"
         search_how: How to search
+    tools:
+      getit: Publication available at
+      mendeley: Save to Mendeley
+      metrics: Metrics
+      availability: Availability
+      get: 'GET IT' 

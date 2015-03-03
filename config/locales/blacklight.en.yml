@@ -29,6 +29,11 @@ en:
       per_page:
         label: '%{count}<span class="sr-only"> per page</span>'
         button_label: '%{count} per page'
+        title: 'Number of results to display per page'
+        submit: 'Update'
+      sort:
+        label: 'Sort by %{field}'
+        submit: 'sort results'
       show:
           title: '%{document_title} - %{application_name}'
           label: '%{label}:'

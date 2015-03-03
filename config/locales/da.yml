@@ -118,10 +118,10 @@ da:
     dx:  Exhibition catalogue
     do:  Andet
   research_area_labels:
-    hum: Humaniora
-    med: Medicinsvidenksab
-    sci: Videnskab/Teknologi
-    soc: Samfundsvidenskab
+    Humanities: Humaniora
+    Social science: 'Samfundsvidenskab'
+    Medical science: 'Medicinsvidenskab'
+    Science/technology: 'Videnskab/Teknologi'
   source_labels:
     orbit: Danmarks Tekniske Universitet
     rdb_ku: Københavns Universitet
@@ -133,11 +133,6 @@ da:
     rdb_vbn: Aalborg Universitet
   
   kenkyu:
-    tools: 
-      getit: Publikationen tilgængelig hos
-      mendeley: Save to Mendeley
-      metrics: Metrikker
-      availability: Tilgængelig hos
     search:
       form:
         clear_search_field_text_hover: Slet søgetermerne
@@ -155,3 +150,9 @@ da:
         containing_ieee: "som indeholder ordet 'IEEE' i feltet: Titel."
         more_help: "Brug for mere hjælp?"
         search_how: Søgetips
+    tools: 
+      getit: Publikationen tilgængelig hos
+      mendeley: Save to Mendeley
+      metrics: Metrikker
+      availability: Tilgængelig hos
+  
