@@ -58,7 +58,7 @@ da:
           format_orig_s: Type
           journal_title_facet: Tidskriftets Titel
           pub_date_tsort: Udgivelsesår
-          research_area_ss: Forskningsområde
+          research_area_ss: Forskningsområde 
           source_ss: Forskningsinstitution
         show:
           abstract_ts: Abstrakt
@@ -74,7 +74,7 @@ da:
           publisher_ts: Udgiver
           research_area_ss: Forskningsområde
           series_title_ts: Serie
-          source_ss: Forskningsinstitution
+          source_ss: Forskningsinstitution  
       filters:
         title: "Du søgte efter:"
         pub_date_tsort: Udgivelsesår
@@ -118,10 +118,10 @@ da:
     dx:  Exhibition catalogue
     do:  Andet
   research_area_labels:
-    hum: Humaniora
-    med: Medicinsvidenksab
-    sci: Videnskab/Teknologi
-    soc: Samfundsvidenskab
+    Humanities: Humaniora
+    Social science: 'Samfundsvidenskab'
+    Medical science: 'Sundhedsvidenskab'
+    Science/technology: 'Teknik/naturvidenskab'
   source_labels:
     orbit: Danmarks Tekniske Universitet
     rdb_ku: Københavns Universitet
@@ -131,17 +131,11 @@ da:
     rdb_ruc: Roskilde Universitet
     rdb_sdu: Syddansk Universitet
     rdb_vbn: Aalborg Universitet
-  
   kenkyu:
-    tools: 
-      getit: Publikationen tilgængelig hos
-      mendeley: Save to Mendeley
-      metrics: Metrikker
-      availability: Tilgængelig hos
     search:
       form:
-        clear_search_field_text_hover: Slet søgetermerne
-        show_search_help_text_hover: Vis Søgetips
+        clear_icon_text_hover: Slet søgetermerne
+        question_icon_text_hover: Vis Søgetips
       help:
         example: Eksempel
         finds_records: Finder dokumenter
@@ -155,3 +149,9 @@ da:
         containing_ieee: "som indeholder ordet 'IEEE' i feltet: Titel."
         more_help: "Brug for mere hjælp?"
         search_how: Søgetips
+    tools: 
+      getit: Publikationen tilgængelig hos
+      mendeley: Save to Mendeley
+      metrics: Metrikker
+      availability: Tilgængelig hos
+  
