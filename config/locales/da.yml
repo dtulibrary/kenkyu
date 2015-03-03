@@ -120,8 +120,8 @@ da:
   research_area_labels:
     Humanities: Humaniora
     Social science: 'Samfundsvidenskab'
-    Medical science: 'Medicinsvidenskab'
-    Science/technology: 'Videnskab/Teknologi'
+    Medical science: 'Sundhedsvidenskab'
+    Science/technology: 'Teknik/naturvidenskab'
   source_labels:
     orbit: Danmarks Tekniske Universitet
     rdb_ku: Københavns Universitet
