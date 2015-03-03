@@ -17,7 +17,7 @@ class CatalogController < ApplicationController
     ## Default parameters to send to solr for all search-like requests. See also SolrHelper#solr_search_params
     config.default_solr_params = { 
       :qt => '/ddf_publ',
-      :rows => 15
+      :rows => 10
     }
     # solr path which will be added to solr base url before the other solr params.
     #config.solr_path = 'select' 
@@ -78,7 +78,7 @@ class CatalogController < ApplicationController
     }
     config.add_facet_field 'source_ss', :label => I18n.t('blacklight.search.fields.facet.source_ss'), :helper_method => :render_source_field_facet, :limit => 10
     config.add_facet_field 'author_facet', :label => I18n.t('blacklight.search.fields.facet.author_facet'), :limit => 10
-    config.add_facet_field 'research_area_ss', :label => I18n.t('blacklight.search.fields.facet.research_area_ss')
+    config.add_facet_field 'research_area_ss', :label => I18n.t('blacklight.search.fields.facet.research_area_ss'), :helper_method => :render_research_area_facet
     config.add_facet_field 'journal_title_facet', :label => I18n.t('blacklight.search.fields.facet.journal_title_facet'), :limit => 10
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
@@ -136,6 +136,11 @@ class CatalogController < ApplicationController
     # label in pulldown is followed by the name of the SOLR field to sort by and
     # whether the sort is ascending or descending (it must be asc or desc
     # except in the relevancy case).
-    config.add_sort_field  'score desc, id desc', :label => 'relevance' 
+   
+    config.add_sort_field  'score desc, id asc', :label => 'relevance' 
+    config.add_sort_field 'id desc, score asc', :label => 'year'
+    config.add_sort_field 'author_facet asc, id desc', :label => 'author'
+    config.add_sort_field 'title_ts asc, pub_date_tsort desc', :label => 'title'
+
   end
 end 
