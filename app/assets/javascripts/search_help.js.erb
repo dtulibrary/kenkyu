@@ -27,6 +27,12 @@
       return false;
     });
 
+    $("#toggle-search-options").click(function () {
+      toggleSearchSyntax();
+      $("#q").focus();
+      return false;
+    });
+
     $("#search-syntax tr .syntax").parent().click(function () {
       var template = $(this).find(".template").text();
       var caretPositionOffset = template.indexOf("{}");

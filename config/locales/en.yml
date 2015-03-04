@@ -37,7 +37,7 @@ en:
           journal_title_ts: Published in
           language_ss: Language
           publisher_ts: Publisher
-          research_area_ss: Research Area
+          research_area_ss: Main Research Area
           series_title_ts: Series
           source_ss: Research Institution
         facet:
@@ -45,7 +45,7 @@ en:
           format_orig_s: Type
           journal_title_facet: Journal Titel
           pub_date_tsort: Publication Year
-          research_area_ss: Research Area
+          research_area_ss: Main Research Area
           source_ss: Research Institution
         show:
           abstract_ts: Abstract
@@ -59,7 +59,7 @@ en:
           journal_title_ts: Published in
           language_ss: Language
           publisher_ts: Publisher
-          research_area_ss: Research Area
+          research_area_ss: Main Research Area
           series_title_ts: Series
           source_ss: Research Institution
       form:
@@ -121,6 +121,7 @@ en:
       form:
         clear_icon_text_hover: Clear search field
         question_icon_text_hover: Show search help
+        more_icon_text_hover: More options
       help:
         example: Example
         finds_records: Finds records

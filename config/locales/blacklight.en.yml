@@ -40,8 +40,8 @@ en:
       title: '%{application_name} Search Results'
       zero_results:
         title: "No results found for your search"
-        modify_search: "Try modifying your search"
-        use_fewer_keywords: "Use fewer keywords to start, then refine your search using the links on the left."
+        modify_search: "Click evt.on question mark in the search box for more help"
+        use_fewer_keywords: '' 
         search_fields: "You searched by %{search_fields}"
         search_everything: "Try searching everything"
     footer:

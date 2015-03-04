@@ -50,7 +50,7 @@ da:
           journal_title_ts: Udgivet i
           language_ss: Sprog
           publisher_ts: Udgiver
-          research_area_ss: Forskningsområde
+          research_area_ss: Hovedforskningsområde
           series_title_ts: Serie
           source_ss: Forskningsinstitution
         facet:
@@ -58,7 +58,7 @@ da:
           format_orig_s: Type
           journal_title_facet: Tidskriftets Titel
           pub_date_tsort: Udgivelsesår
-          research_area_ss: Forskningsområde 
+          research_area_ss: Hovedforskningsområde 
           source_ss: Forskningsinstitution
         show:
           abstract_ts: Abstrakt
@@ -72,7 +72,7 @@ da:
           journal_title_ts: Udgivet i
           language_ss: Sprog
           publisher_ts: Udgiver
-          research_area_ss: Forskningsområde
+          research_area_ss: Hovedforskningsområde
           series_title_ts: Serie
           source_ss: Forskningsinstitution  
       filters:
@@ -136,6 +136,7 @@ da:
       form:
         clear_icon_text_hover: Slet søgetermerne
         question_icon_text_hover: Vis Søgetips
+        more_icon_text_hover: Flere Muligheder
       help:
         example: Eksempel
         finds_records: Finder dokumenter

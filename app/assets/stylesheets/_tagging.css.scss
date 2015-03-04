@@ -1,0 +1,90 @@
+
+
+// make tagging buttons line up side-by-side
+.tag_control {
+  form {
+    display: inline;
+    button {
+      display: inline;
+      border: none;
+      background: none;
+      padding: 0px;
+      margin: 0px;
+    }
+  }
+}
+
+
+
+.tag_list,.tag_control {
+  .tags_dropdown .has-tags i {
+    color: red;
+  }
+
+  .tags_dropdown .no-tags i {
+    color: grey;
+  }
+
+  .icon-star,.icon-tag {
+    color: red;
+  }
+
+  .icon-star-o, .icon-mendeley, .icon-quote-right, .icon-share-square-o {
+    color: grey;
+  }
+
+  .icon-tag {
+      margin-left: 1px;
+      margin-top: 2px;
+      margin-right: -1px;
+  }
+
+  
+  .icon-external-link, .icon-share-square-o, .icon-quote-right {
+      margin-top: 2px;
+  }
+}
+
+
+.document .tags .tag {
+  .icon-times {
+    color: #ffffff;
+  }
+}
+
+.tags_dropdown .dropdown-menu {
+  min-width: 280px;
+  padding: 5px 5px;
+  a.remove-tag {
+    color: blue;
+    font-weight: bold;
+    .icon-times {
+      color: blue;
+    }
+  }
+  a.remove-tag:hover {
+    color: #ffffff;
+  }
+}
+
+.tag.label {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: normal;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  text-shadow: none;
+
+  // format remove button with icon inside label
+  form {
+    display: inline;
+    button {
+      border: 0px;
+      padding: 0px;
+      margin: 0px;
+      background: none;
+      position: relative;
+      top: 1px;
+    }
+  }
+}
