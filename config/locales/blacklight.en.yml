@@ -16,6 +16,9 @@ en:
       filters:
         title: 'You searched for:'
         label: '%{label}:'
+        remove:
+          value: 'Remove constraint %{value}'
+          label_value: 'Remove constraint %{label}: %{value}'
       form:
         logo_label: 'Danish National Research Database'
       index:
@@ -29,6 +32,11 @@ en:
       per_page:
         label: '%{count}<span class="sr-only"> per page</span>'
         button_label: '%{count} per page'
+        title: 'Number of results to display per page'
+        submit: 'Update'
+      sort:
+        label: 'Sort by %{field}'
+        submit: 'sort results'
       show:
           title: '%{document_title} - %{application_name}'
           label: '%{label}:'

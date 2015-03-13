@@ -1,7 +1,15 @@
 #facets {
   .facet-values {
-    .facet-label, .facet-count {
+   .facet-label, .facet-count {
       font-size: 0.9em;
     }
   }
-}
+
+ #facet-pub_date_tsort {
+
+   .facet-label, .facet-count {
+      display: none;
+     }
+   }
+ }
+

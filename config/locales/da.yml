@@ -50,7 +50,7 @@ da:
           journal_title_ts: Udgivet i
           language_ss: Sprog
           publisher_ts: Udgiver
-          research_area_ss: Forskningsområde
+          research_area_ss: Hovedforskningsområde
           series_title_ts: Serie
           source_ss: Forskningsinstitution
         facet:
@@ -58,7 +58,7 @@ da:
           format_orig_s: Type
           journal_title_facet: Tidskriftets Titel
           pub_date_tsort: Udgivelsesår
-          research_area_ss: Forskningsområde
+          research_area_ss: Hovedforskningsområde
           source_ss: Forskningsinstitution
         show:
           abstract_ts: Abstrakt
@@ -72,12 +72,22 @@ da:
           journal_title_ts: Udgivet i
           language_ss: Sprog
           publisher_ts: Udgiver
-          research_area_ss: Forskningsområde
+          research_area_ss: Hovedforskningsområde
           series_title_ts: Serie
           source_ss: Forskningsinstitution
+          
       filters:
         title: "Du søgte efter:"
+        label: '%{label}:'
+        remove:
+          value: 'Slet begrænsning %{value}'
+          label_value: 'Slet begrænsning %{label}: %{value}'
+        author_facet: Forfatter
+        format_orig_s: Type
+        journal_title_facet: Tidskriftets Titel
         pub_date_tsort: Udgivelsesår
+        research_area_ss: Forskningsområde 
+        
       form:
         logo_label: Den Danske Forskningsdatabase
         q: Søg...
@@ -118,10 +128,10 @@ da:
     dx:  Exhibition catalogue
     do:  Andet
   research_area_labels:
-    hum: Humaniora
-    med: Medicinsvidenksab
-    sci: Videnskab/Teknologi
-    soc: Samfundsvidenskab
+    Humanities: Humaniora
+    Social science: 'Samfundsvidenskab'
+    Medical science: 'Sundhedsvidenskab'
+    Science/technology: 'Teknik/naturvidenskab'
   source_labels:
     orbit: Danmarks Tekniske Universitet
     rdb_ku: Københavns Universitet
@@ -133,15 +143,10 @@ da:
     rdb_vbn: Aalborg Universitet
   
   kenkyu:
-    tools: 
-      getit: Publikationen tilgængelig hos
-      mendeley: Save to Mendeley
-      metrics: Metrikker
-      availability: Tilgængelig hos
     search:
       form:
-        clear_search_field_text_hover: Slet søgetermerne
-        show_search_help_text_hover: Vis Søgetips
+        clear_search_text_hover: Slet søgetermerne
+        search_help_text_hover: Vis Søgetips
       help:
         example: Eksempel
         finds_records: Finder dokumenter
@@ -155,3 +160,9 @@ da:
         containing_ieee: "som indeholder ordet 'IEEE' i feltet: Titel."
         more_help: "Brug for mere hjælp?"
         search_how: Søgetips
+    tools: 
+      getit: Publikationen tilgængelig hos
+      mendeley: Save to Mendeley
+      metrics: Metrikker
+      availability: Tilgængelig hos
+  

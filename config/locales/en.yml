@@ -37,15 +37,15 @@ en:
           journal_title_ts: Published in
           language_ss: Language
           publisher_ts: Publisher
-          research_area_ss: Research Area
+          research_area_ss: Main Research Area
           series_title_ts: Series
           source_ss: Research Institution
         facet:
           author_facet: Author
           format_orig_s: Type
           journal_title_facet: Journal Titel
-          pub_date_tsort: Publication Year
-          research_area_ss: Research Area
+          pub_date_tsort: 'Publication Year'
+          research_area_ss: Main Research Area
           source_ss: Research Institution
         show:
           abstract_ts: Abstract
@@ -59,15 +59,21 @@ en:
           journal_title_ts: Published in
           language_ss: Language
           publisher_ts: Publisher
-          research_area_ss: Research Area
+          research_area_ss: Main Research Area
           series_title_ts: Series
           source_ss: Research Institution
+      filters:
+        title: 'You searched for:'
+        label: '%{label}:'
+        remove:
+          value: 'Remove constraint %{value}'
+          label_value: 'Remove constraint %{label}: %{value}'
       form:
         logo_label: Danish National Research Database
       start_over: Start Over
       rss_feed: 'RSS for results'
       atom_feed: 'Atom for results'
-    
+      
   mxd_type_labels:
     dja: Journal article
     djl: Letter to the editor
@@ -112,16 +118,15 @@ en:
     rdb_sdu: University of Southern Denmark
     rdb_vbn: Aalborg University
   kenkyu:
-    tools:
-      getit: Publication available at
-      mendeley: Save to Mendeley
-      metrics: Metrics
-      availability: Availability
-      get: 'GET IT' 
+    research_area_labels:
+      hum: Humanities
+      med: Medical science
+      sci: Science/technology
+      soc: Social science
     search:
       form:
-        clear_search_field_text_hover: Clear search field
-        show_search_help_text_hover: Show search help
+        clear_search_text_hover: Clear search field
+        search_help_text_hover: Show search help
       help:
         example: Example
         finds_records: Finds records
@@ -135,3 +140,9 @@ en:
         containing_ieee: "containing the word 'IEEE' in the title field."
         more_help: "Need more help?"
         search_how: How to search
+    tools:
+      getit: Publication available at
+      mendeley: Save to Mendeley
+      metrics: Metrics
+      availability: Availability
+      get: 'GET IT' 
