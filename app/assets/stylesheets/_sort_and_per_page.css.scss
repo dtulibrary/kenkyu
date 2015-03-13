@@ -13,7 +13,7 @@
       &:hover, &.hovering {
         & > ul {
           border-top: none;
-        
+
         }
       }
     }
@@ -24,8 +24,12 @@
       padding-top: 0.2ex;
       padding-right: 0.6ex;
       color: grey;
+   }
   }
 
-  
+  #save_and_export-dropdown {
+      ul li ul li {
+          font-size: 90%;
+      }
   }
 }
