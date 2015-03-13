@@ -16,9 +16,6 @@ en:
       filters:
         title: 'You searched for:'
         label: '%{label}:'
-        remove:
-          value: 'Remove constraint %{value}'
-          label_value: 'Remove constraint %{label}: %{value}'
       form:
         logo_label: 'Danish National Research Database'
       index:

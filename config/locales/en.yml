@@ -44,7 +44,7 @@ en:
           author_facet: Author
           format_orig_s: Type
           journal_title_facet: Journal Titel
-          pub_date_tsort: 'Publication Year'
+          pub_date_tsort: Publication Year
           research_area_ss: Main Research Area
           source_ss: Research Institution
         show:
@@ -62,18 +62,12 @@ en:
           research_area_ss: Main Research Area
           series_title_ts: Series
           source_ss: Research Institution
-      filters:
-        title: 'You searched for:'
-        label: '%{label}:'
-        remove:
-          value: 'Remove constraint %{value}'
-          label_value: 'Remove constraint %{label}: %{value}'
       form:
         logo_label: Danish National Research Database
       start_over: Start Over
       rss_feed: 'RSS for results'
       atom_feed: 'Atom for results'
-      
+    
   mxd_type_labels:
     dja: Journal article
     djl: Letter to the editor
@@ -125,8 +119,8 @@ en:
       soc: Social science
     search:
       form:
-        clear_search_text_hover: Clear search field
-        search_help_text_hover: Show search help
+        clear_icon_text_hover: Clear search field
+        question_icon_text_hover: Show search help
       help:
         example: Example
         finds_records: Finds records

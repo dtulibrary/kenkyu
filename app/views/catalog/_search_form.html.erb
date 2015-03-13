@@ -2,8 +2,8 @@
   <%= render_hash_as_hidden_fields(params_for_search().except(:q, :search_field, :qt, :page, :utf8 )) %>
    <div class="text-field-with-icons">
     <div class="icons pull-right">
-      <a title="Show search help" id="toggle-search-syntax" href="#"><i class="glyphicon glyphicon-question-sign"></i></a>
-      <a title="Clear search field" id="search-clear" href="#"><i class="glyphicon glyphicon-remove-circle"></i></a>
+      <a title="<%= t ('kenkyu.search.form.question_icon_text_hover') %>" id="toggle-search-syntax" href="#"><i class="glyphicon glyphicon-question-sign"></i></a>
+      <a title="<%= t ('kenkyu.search.form.clear_icon_text_hover') %>" id="search-clear" href="#"><i class="glyphicon glyphicon-remove-circle"></i></a>
    </div>
    
      <div class="input-group-btn">

@@ -1,0 +1,39 @@
+#sortAndPerPage {
+  background: none;
+  border: none;
+  padding: 0px;
+  box-shadow: none;
+  min-height: 0px;
+
+  .page_links {
+  }
+
+  .css-dropdown {
+    li {
+      &:hover, &.hovering {
+        & > ul {
+          border-top: none;
+        }
+      }
+    }
+  }
+
+  .icon-file-text-o {
+      font-size: 80%;
+      padding-top: 0.2ex;
+      padding-right: 0.6ex;
+  }
+
+  #save_and_export-dropdown {
+    ul li ul li {
+        font-size: 90%;
+    }
+
+    .dropdown-toggle > *[class ^= 'icon-'] {
+      float: left;
+      padding-top: 2px;
+      margin-right: 0.2em;
+      color: #999;
+    }
+  }
+}

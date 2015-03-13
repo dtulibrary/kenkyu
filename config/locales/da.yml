@@ -58,7 +58,7 @@ da:
           format_orig_s: Type
           journal_title_facet: Tidskriftets Titel
           pub_date_tsort: Udgivelsesår
-          research_area_ss: Hovedforskningsområde
+          research_area_ss: Hovedforskningsområde 
           source_ss: Forskningsinstitution
         show:
           abstract_ts: Abstrakt
@@ -74,20 +74,10 @@ da:
           publisher_ts: Udgiver
           research_area_ss: Hovedforskningsområde
           series_title_ts: Serie
-          source_ss: Forskningsinstitution
-          
+          source_ss: Forskningsinstitution  
       filters:
         title: "Du søgte efter:"
-        label: '%{label}:'
-        remove:
-          value: 'Slet begrænsning %{value}'
-          label_value: 'Slet begrænsning %{label}: %{value}'
-        author_facet: Forfatter
-        format_orig_s: Type
-        journal_title_facet: Tidskriftets Titel
         pub_date_tsort: Udgivelsesår
-        research_area_ss: Forskningsområde 
-        
       form:
         logo_label: Den Danske Forskningsdatabase
         q: Søg...
@@ -141,12 +131,11 @@ da:
     rdb_ruc: Roskilde Universitet
     rdb_sdu: Syddansk Universitet
     rdb_vbn: Aalborg Universitet
-  
   kenkyu:
     search:
       form:
-        clear_search_text_hover: Slet søgetermerne
-        search_help_text_hover: Vis Søgetips
+        clear_icon_text_hover: Slet søgetermerne
+        question_icon_text_hover: Vis Søgetips
       help:
         example: Eksempel
         finds_records: Finder dokumenter

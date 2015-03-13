@@ -9,6 +9,10 @@ module CatalogHelper
     t "source_labels.#{value}"
   end
 
+  def render_research_area_facet value
+    t "research_area_labels.#{value}"
+  end
+
   def render_source_field args
     args[:document]['source_ss'].collect {|s| t "source_labels.#{s}"}.join ' ; '
   end
